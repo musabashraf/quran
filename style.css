@@ -1,0 +1,146 @@
+/* Quran Root Method - Minimalist Custom Styles */
+:root {
+    --bs-primary: #1B4332;
+    --bs-primary-rgb: 27, 67, 50;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f3f4f6;
+}
+
+.font-amiri {
+    font-family: 'Amiri', 'Scheherazade New', serif !important;
+    font-feature-settings: "kern" 1, "liga" 1;
+    line-height: 1.6;
+}
+
+/* Sidebar Layout Logic */
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1050;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 991.98px) {
+    .sidebar {
+        transform: translateX(-100%);
+    }
+    .sidebar.show {
+        transform: translateX(0);
+    }
+}
+
+.main-content {
+    margin-left: 280px;
+    min-height: 100vh;
+}
+
+@media (max-width: 991.98px) {
+    .main-content {
+        margin-left: 0;
+    }
+}
+
+/* Sidebar Nav Links */
+.sidebar .nav-link {
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.sidebar .nav-link.active {
+    background-color: var(--bs-primary) !important;
+    color: white !important;
+}
+
+.sidebar .nav-link:not(.active):hover {
+    background-color: rgba(var(--bs-primary-rgb), 0.05);
+    color: var(--bs-primary);
+}
+
+/* Button Overrides */
+.btn-primary {
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-bg: #143528;
+    --bs-btn-hover-border-color: #143528;
+    --bs-btn-active-bg: #143528;
+    --bs-btn-active-border-color: #143528;
+    --bs-btn-disabled-bg: var(--bs-primary);
+    --bs-btn-disabled-border-color: var(--bs-primary);
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-bg: var(--bs-primary);
+    --bs-btn-hover-border-color: var(--bs-primary);
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: var(--bs-primary);
+}
+
+/* Hero Overlay logic (Hard to do purely with standard Bootstrap utilities) */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.hero-box {
+    position: relative;
+    min-height: 75vh;
+    padding: 40px 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px; /* Reducing top margin/offset */
+}
+
+.hero-box img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 1.5rem;
+    padding: 1.5rem 2rem;
+    display: inline-block;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.glass-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+}
+
+/* Small custom utilities not in Bootstrap */
+.ls-wide { letter-spacing: 0.05em; }
+.backdrop-blur { backdrop-filter: blur(4px); }
+
