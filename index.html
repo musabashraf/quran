@@ -13,14 +13,14 @@
 <body>
 
     <!-- Mobile Header -->
-    <nav class="navbar navbar-light bg-white border-bottom d-lg-none sticky-top">
+    <nav class="navbar navbar-light bg-white border-bottom d-lg-none sticky-top py-3">
         <div class="container-fluid">
             <button class="navbar-toggler border-0 ps-0" type="button" onclick="toggleSidebar()">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand d-flex align-items-center gap-2 mx-auto" href="#">
-                <img src="assets/logo.png" alt="Logo" width="24" height="24">
-                <span class="fw-bold small">Quran Root Method</span>
+                <img src="assets/logo.png" alt="Logo" width="28" height="28">
+                <span class="fw-bold text-primary">Quran Root Method</span>
             </a>
             <div style="width: 40px;"></div>
         </div>
@@ -28,45 +28,45 @@
 
     <div class="d-flex">
         <!-- Sidebar -->
-        <aside id="sidebar" class="sidebar bg-body-tertiary border-end">
+        <aside id="sidebar" class="sidebar">
             <!-- Sidebar content loaded via main.js -->
         </aside>
 
         <!-- Main Content -->
         <main class="main-content w-100">
-            <div class="container-lg py-5 px-2 px-md-5">
+            <div class="container-lg py-5 px-3 px-md-5">
                 
                 <!-- Hero Section -->
-                <div class="hero-box mb-4 shadow-sm rounded-5 d-flex align-items-center justify-content-center text-center text-white">
+                <div class="hero-box mb-5 shadow-lg d-flex align-items-center justify-content-center text-center">
                     <img src="assets/quran_hero.png" alt="Quran Background">
-                    <div class="hero-content p-4 w-100" style="max-width: 1100px;">
+                    <div class="hero-content p-4 w-100" style="max-width: 900px;">
                         <!-- Centered Ayah -->
-                        <div class="mb-5 animate-float" style="animation-delay: 0.2s;">
-                            <h2 class="font-amiri display-3 mb-4" dir="rtl">وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِنْ مُدَّكِرٍ</h2>
-                            <div class="mx-auto opacity-50 mb-4" style="width: 100px; height: 2px; background: linear-gradient(to right, transparent, #ffc107, transparent);"></div>
-                            <p class="lead fw-normal fst-italic mb-0">"And We have certainly made the Quran easy to understand & remember, so is there any who will remember?" (54:17)</p>
+                        <div class="mb-5 animate-float">
+                            <h2 class="font-amiri display-3 mb-4 text-white" dir="rtl">وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِنْ مُدَّكِرٍ</h2>
+                            <div class="mx-auto mb-4" style="width: 80px; height: 3px; background: var(--gold-accent); border-radius: 2px;"></div>
+                            <p class="lead fw-light fst-italic mb-0 text-white-50">"And We have certainly made the Quran easy to understand & remember, so is there any who will remember?" (54:17)</p>
                         </div>
                         
                         <!-- Premium Syllabus Card -->
-                        <div class="glass-card mb-3 animate-float" style="animation-delay: 0.5s;">
-                            <p class="h4 fw-bold mb-0">A simplified syllabus to learn the quranic language and grammar</p>
+                        <div class="glass-card mb-4">
+                            <p class="h4 fw-bold mb-0 text-white">A simplified syllabus to learn the quranic language and grammar</p>
                         </div>
 
                         <!-- Refined Grid -->
-                        <div class="row g-4 justify-content-center mt-4">
+                        <div class="row g-4 justify-content-center mt-2">
                             <div class="col-lg-4 col-md-6">
-                                <div class="glass-card p-4 rounded-5 w-100 h-100 text-center animate-float" style="animation-delay: 0.8s;">
-                                    <p class="fw-bold mb-0">300 root words constitute 80% of the Quran</p>
+                                <div class="glass-card p-4 rounded-4 w-100 h-100 text-center">
+                                    <p class="small fw-medium mb-0 text-white-50">300 root words constitute 80% of the Quran</p>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6">
-                                <div class="glass-card p-4 rounded-5 w-100 h-100 text-center animate-float" style="animation-delay: 1.1s;">
-                                    <p class="fw-bold mb-0">Helps understand the quran directly without need of any translation </p>
+                                <div class="glass-card p-4 rounded-4 w-100 h-100 text-center">
+                                    <p class="small fw-medium mb-0 text-white-50">Understand the Quran directly without translations</p>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6">
-                                <div class="glass-card p-4 rounded-5 w-100 h-100 text-center animate-float" style="animation-delay: 1.4s;">
-                                    <p class="fw-bold mb-0">Master 3-letter roots to unlock thousands of words.</p>
+                                <div class="glass-card p-4 rounded-4 w-100 h-100 text-center">
+                                    <p class="small fw-medium mb-0 text-white-50">Master 3-letter roots to unlock thousands of words</p>
                                 </div>
                             </div>
                         </div>
@@ -80,62 +80,70 @@
                 <!-- Syllabus Explanation -->
                 <div class="row g-4 mt-5 justify-content-center">
                     <div class="col-lg-10">
-                        <div class="bg-white p-5 rounded-5 shadow-sm border-top border-4 border-primary">
-                            <h3 class="fw-bold text-dark mb-4">About the Course</h3>
-                            <p class="lead text-secondary mb-4">The objective of this course is to enable anyone who can read the Quran to understand it directly without the need for any translation by learning through the <strong>Root Method</strong>.</p>
+                        <div class="bg-white p-5 rounded-4 border border-light">
+                            <h3 class="fw-bold mb-4 text-dark">About the Course</h3>
+                            <p class="lead text-muted mb-5">The objective of this course is to enable anyone who can read the Quran to understand it directly without the need for any translation by learning through the <strong>Root Method</strong>.</p>
                             
-                            <div class="row g-4 text-start">
+                            <div class="row g-4 text-start mb-5">
                                 <div class="col-md-6">
                                     <h5 class="fw-bold text-primary mb-3">Simplified Grammar</h5>
-                                    <p class="small text-muted">We have designed this syllabus to teach Quranic grammar in the easiest manner possible, focusing on patterns that cover the majority of the Quranic text.</p>
+                                    <p class="small text-muted mb-0">We have designed this syllabus to teach Quranic grammar in the easiest manner possible, focusing on patterns that cover the majority of the Quranic text.</p>
                                 </div>
                                 <div class="col-md-6">
                                     <h5 class="fw-bold text-primary mb-3">The Root Method</h5>
-                                    <p class="small text-muted">By mastering 3-letter roots and their basic transformations, you can unlock the meaning of thousands of words without memorizing endless vocabulary lists.</p>
+                                    <p class="small text-muted mb-0">By mastering 3-letter roots and their basic transformations, you can unlock the meaning of thousands of words without memorizing endless vocabulary lists.</p>
                                 </div>
                             </div>
 
-                            <hr class="my-4 opacity-10">
-
-                            <h4 class="fw-bold text-dark mb-4">Syllabus Overview</h4>
-                            <div class="row g-3 text-start">
-                                <div class="col-12">
-                                    <div class="d-flex gap-3 mb-4">
-                                        <div class="badge bg-primary-subtle text-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px; flex-shrink: 0;">1</div>
-                                        <div>
-                                            <h6 class="fw-bold mb-1">Word Classification</h6>
-                                            <p class="small text-muted mb-0">Learn how every word in the Quran is either an Ism (Name), Fil (Verb), or Huroof (Particle). This foundation is key to all further learning.</p>
+                            <div class="mb-5">
+                                <h4 class="fw-bold mb-4">Syllabus Overview</h4>
+                                <div class="row g-4 text-start">
+                                    <div class="col-md-4">
+                                        <div class="card card-top-blue h-100">
+                                            <div class="card-body p-4">
+                                                <div class="badge bg-primary-subtle rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 36px; height: 36px;">1</div>
+                                                <h6 class="fw-bold mb-2">Word Classification</h6>
+                                                <p class="small text-muted mb-0">Learn how every word in the Quran is either an Ism (Name), Verb (Verb), or Huroof (Particle).</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="d-flex gap-3 mb-4">
-                                        <div class="badge bg-primary-subtle text-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px; flex-shrink: 0;">2</div>
-                                        <div>
-                                            <h6 class="fw-bold mb-1">The 5 Basic Forms</h6>
-                                            <p class="small text-muted mb-0">Understand the fundamental DNA of Arabic grammar through five core transformations that apply to almost any 3-letter root word.</p>
+                                    <div class="col-md-4">
+                                        <div class="card card-top-green h-100">
+                                            <div class="card-body p-4">
+                                                <div class="badge bg-primary-subtle rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 36px; height: 36px;">2</div>
+                                                <h6 class="fw-bold mb-2">The 5 Basic Forms</h6>
+                                                <p class="small text-muted mb-0">Understand the fundamental DNA of Arabic grammar through five core transformations.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="d-flex gap-3">
-                                        <div class="badge bg-primary-subtle text-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px; flex-shrink: 0;">3</div>
-                                        <div>
-                                            <h6 class="fw-bold mb-1">Mudari Forms & Atayna</h6>
-                                            <p class="small text-muted mb-0">Master the present and future tense using the simple 'Atayna' prefix method to identify the subject of any action.</p>
+                                    <div class="col-md-4">
+                                        <div class="card card-top-purple h-100">
+                                            <div class="card-body p-4">
+                                                <div class="badge bg-primary-subtle rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 36px; height: 36px;">3</div>
+                                                <h6 class="fw-bold mb-2">Mudari Forms & Atayna</h6>
+                                                <p class="small text-muted mb-0">Master the present and future tense using the simple 'Atayna' prefix method.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+
+                            <div class="text-center mt-2">
+                                <a href="chapter1.html" class="btn btn-primary btn-lg rounded-pill px-5 py-3 fw-bold">Start Learning Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <footer class="text-center py-4 mt-4 border-top opacity-50">
-                    <p class="small mb-0">Powered by <a href="https://www.jakacloud.com" class="text-decoration-none text-dark fw-bold" target="_blank">www.jakacloud.com</a></p>
+                <footer class="text-center pt-5 pb-4 mt-5 border-top opacity-75">
+                    <p class="small text-muted mb-0">Powered by <a href="https://www.jakacloud.com" class="text-decoration-none text-primary fw-bold" target="_blank">www.jakacloud.com</a></p>
                 </footer>
             </div>
         </main>
     </div>
 
     <!-- Overlay for mobile -->
-    <div id="sidebar-overlay" class="position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-10 backdrop-blur d-none z-1040" style="backdrop-filter: blur(4px);" onclick="toggleSidebar()"></div>
+    <div id="sidebar-overlay" class="position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-10 backdrop-blur d-none z-1040" onclick="toggleSidebar()"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

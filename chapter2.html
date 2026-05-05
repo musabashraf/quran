@@ -13,14 +13,14 @@
 <body>
 
     <!-- Mobile Header -->
-    <nav class="navbar navbar-light bg-white border-bottom d-lg-none sticky-top">
+    <nav class="navbar navbar-light bg-white border-bottom d-lg-none sticky-top py-3">
         <div class="container-fluid">
             <button class="navbar-toggler border-0 ps-0" type="button" onclick="toggleSidebar()">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand d-flex align-items-center gap-2 mx-auto" href="#">
-                <img src="assets/logo.png" alt="Logo" width="24" height="24">
-                <span class="fw-bold small">Quran Root Method</span>
+                <img src="assets/logo.png" alt="Logo" width="28" height="28">
+                <span class="fw-bold text-primary">Quran Root Method</span>
             </a>
             <div style="width: 40px;"></div>
         </div>
@@ -28,144 +28,145 @@
 
     <div class="d-flex">
         <!-- Sidebar -->
-        <aside id="sidebar" class="sidebar bg-body-tertiary border-end">
+        <aside id="sidebar" class="sidebar">
             <!-- Sidebar content loaded via main.js -->
         </aside>
 
         <!-- Main Content -->
         <main class="main-content w-100">
-            <div class="container-lg py-5 px-2 px-md-5">
+            <div class="container-lg py-5 px-3 px-md-5">
                 
                 <div class="mb-5">
-                    <h3 class="fw-bold text-dark mb-3">Chapter 2:<br>The 5 Basic Forms</h3>
+                    <h3 class="fw-bold text-dark mb-2">Chapter 2</h3>
+                    <h4 class="fw-bold text-primary mb-3">The 5 Basic Forms</h4>
                     <p class="lead text-muted fw-normal">Every 3-letter root in the Quran follows these five fundamental transformations.</p>
                 </div>
 
                 <!-- Table Container -->
-                <div class="table-responsive mb-5 shadow-sm rounded-4">
+                <div class="table-responsive mb-5 rounded-4 border border-light">
                     <table class="table table-hover bg-white mb-0">
-                        <thead class="table-light text-dark">
+                        <thead>
                             <tr>
-                                <th class="text-center py-4 small text-uppercase ls-wide">Grammar Form</th>
-                                <th class="text-center py-4 small text-uppercase ls-wide">Core Pattern</th>
-                                <th class="text-center py-4 small text-uppercase ls-wide">Example Root</th>
-                                <th class="text-center py-4 small text-uppercase ls-wide">Form Explanation</th>
+                                <th class="text-center py-4 small text-uppercase ls-wide border-0">Grammar Form</th>
+                                <th class="text-center py-4 small text-uppercase ls-wide border-0">Core Pattern</th>
+                                <th class="text-center py-4 small text-uppercase ls-wide border-0">Example Root</th>
+                                <th class="text-center py-4 small text-uppercase ls-wide border-0">Explanation</th>
                             </tr>
                         </thead>
                         <tbody class="border-top-0">
                             <tr>
-                                <td class="align-middle text-center py-4">
+                                <td class="align-middle text-center py-4 border-0">
                                     <div class="d-inline-block">
-                                        <div class="font-amiri h4 text-primary mb-2" dir="rtl">مَاضِي</div>
+                                        <div class="font-amiri h4 text-primary mb-1" dir="rtl">مَاضِي</div>
                                         <div class="small fw-medium text-muted">Past</div>
                                     </div>
                                 </td>
-                                <td class="align-middle text-center py-4">
+                                <td class="align-middle text-center py-4 border-0">
                                     <div class="d-inline-block bg-primary-subtle rounded-3 px-4 py-3 border border-primary-subtle">
                                         <div class="font-amiri h4 text-primary mb-1" dir="rtl">فَعَلَ</div>
-                                        <div class="small fw-bold text-primary text-uppercase ls-wide" style="font-size: 0.7rem;">He did</div>
+                                        <div class="small fw-bold text-primary text-uppercase ls-wide" style="font-size: 0.65rem;">He did</div>
                                     </div>
                                 </td>
-                                <td class="align-middle text-center py-4">
+                                <td class="align-middle text-center py-4 border-0">
                                     <div class="d-inline-block">
-                                        <div class="font-amiri h4 text-primary mb-2" dir="rtl">كَتَبَ</div>
+                                        <div class="font-amiri h4 text-primary mb-1" dir="rtl">كَتَبَ</div>
                                         <div class="small fw-medium text-muted">"He wrote"</div>
                                     </div>
                                 </td>
-                                <td class="align-middle text-center" style="max-width: 250px;">
-                                    <p class="text-secondary mb-0 fw-normal fst-italic" style="font-size: 0.8rem;">Describes an action that has already been completed.</p>
+                                <td class="align-middle text-center border-0" style="max-width: 250px;">
+                                    <p class="text-muted mb-0 small">Describes an action that has already been completed.</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="align-middle text-center py-4">
+                                <td class="align-middle text-center py-4 border-0">
                                     <div class="d-inline-block">
-                                        <div class="font-amiri h4 text-primary mb-2" dir="rtl">مُضَارِع</div>
+                                        <div class="font-amiri h4 text-primary mb-1" dir="rtl">مُضَارِع</div>
                                         <div class="small fw-medium text-muted">Present</div>
                                     </div>
                                 </td>
-                                <td class="align-middle text-center py-4">
+                                <td class="align-middle text-center py-4 border-0">
                                     <div class="d-inline-block bg-primary-subtle rounded-3 px-4 py-3 border border-primary-subtle">
                                         <div class="font-amiri h4 text-primary mb-1" dir="rtl">يَفْعَلُ</div>
-                                        <div class="small fw-bold text-primary text-uppercase ls-wide" style="font-size: 0.7rem;">He does</div>
+                                        <div class="small fw-bold text-primary text-uppercase ls-wide" style="font-size: 0.65rem;">He does</div>
                                     </div>
                                 </td>
-                                <td class="align-middle text-center py-4">
+                                <td class="align-middle text-center py-4 border-0">
                                     <div class="d-inline-block">
-                                        <div class="font-amiri h4 text-primary mb-2" dir="rtl">يَكْتُبُ</div>
+                                        <div class="font-amiri h4 text-primary mb-1" dir="rtl">يَكْتُبُ</div>
                                         <div class="small fw-medium text-muted">"He writes"</div>
                                     </div>
                                 </td>
-                                <td class="align-middle text-center" style="max-width: 250px;">
-                                    <p class="text-secondary mb-0 fw-normal fst-italic" style="font-size: 0.8rem;">Describes an action currently happening or that will happen.</p>
+                                <td class="align-middle text-center border-0" style="max-width: 250px;">
+                                    <p class="text-muted mb-0 small">Describes an action currently happening or that will happen.</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="align-middle text-center py-4">
+                                <td class="align-middle text-center py-4 border-0">
                                     <div class="d-inline-block">
-                                        <div class="font-amiri h4 text-primary mb-2" dir="rtl">أَمْر</div>
+                                        <div class="font-amiri h4 text-primary mb-1" dir="rtl">أَمْر</div>
                                         <div class="small fw-medium text-muted">Command</div>
                                     </div>
                                 </td>
-                                <td class="align-middle text-center py-4">
+                                <td class="align-middle text-center py-4 border-0">
                                     <div class="d-inline-block bg-primary-subtle rounded-3 px-4 py-3 border border-primary-subtle">
                                         <div class="font-amiri h4 text-primary mb-1" dir="rtl">اِفْعَلْ</div>
-                                        <div class="small fw-bold text-primary text-uppercase ls-wide" style="font-size: 0.7rem;">Do!</div>
+                                        <div class="small fw-bold text-primary text-uppercase ls-wide" style="font-size: 0.65rem;">Do!</div>
                                     </div>
                                 </td>
-                                <td class="align-middle text-center py-4">
+                                <td class="align-middle text-center py-4 border-0">
                                     <div class="d-inline-block">
-                                        <div class="font-amiri h4 text-primary mb-2" dir="rtl">اُكْتُبْ</div>
+                                        <div class="font-amiri h4 text-primary mb-1" dir="rtl">اُكْتُبْ</div>
                                         <div class="small fw-medium text-muted">"Write!"</div>
                                     </div>
                                 </td>
-                                <td class="align-middle text-center" style="max-width: 250px;">
-                                    <p class="text-secondary mb-0 fw-normal fst-italic" style="font-size: 0.8rem;">An instruction or order given directly to someone.</p>
+                                <td class="align-middle text-center border-0" style="max-width: 250px;">
+                                    <p class="text-muted mb-0 small">An instruction or order given directly to someone.</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="align-middle text-center py-4">
+                                <td class="align-middle text-center py-4 border-0">
                                     <div class="d-inline-block">
-                                        <div class="font-amiri h4 text-primary mb-2" dir="rtl">اِسْم فَاعِل</div>
+                                        <div class="font-amiri h4 text-primary mb-1" dir="rtl">اِسْم فَاعِل</div>
                                         <div class="small fw-medium text-muted">Ism Fail</div>
                                     </div>
                                 </td>
-                                <td class="align-middle text-center py-4">
+                                <td class="align-middle text-center py-4 border-0">
                                     <div class="d-inline-block bg-primary-subtle rounded-3 px-4 py-3 border border-primary-subtle">
                                         <div class="font-amiri h4 text-primary mb-1" dir="rtl">فَاعِل</div>
-                                        <div class="small fw-bold text-primary text-uppercase ls-wide" style="font-size: 0.7rem;">One who does</div>
+                                        <div class="small fw-bold text-primary text-uppercase ls-wide" style="font-size: 0.65rem;">One who does</div>
                                     </div>
                                 </td>
-                                <td class="align-middle text-center py-4">
+                                <td class="align-middle text-center py-4 border-0">
                                     <div class="d-inline-block">
-                                        <div class="font-amiri h4 text-primary mb-2" dir="rtl">كَاتِب</div>
+                                        <div class="font-amiri h4 text-primary mb-1" dir="rtl">كَاتِب</div>
                                         <div class="small fw-medium text-muted">"Writer"</div>
                                     </div>
                                 </td>
-                                <td class="align-middle text-center" style="max-width: 250px;">
-                                    <p class="text-secondary mb-0 fw-normal fst-italic" style="font-size: 0.8rem;">The person or entity performing the action.</p>
+                                <td class="align-middle text-center border-0" style="max-width: 250px;">
+                                    <p class="text-muted mb-0 small">The person or entity performing the action.</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="align-middle text-center py-4">
+                                <td class="align-middle text-center py-4 border-0">
                                     <div class="d-inline-block">
-                                        <div class="font-amiri h4 text-primary mb-2" dir="rtl">اِسْم مَفْعُول</div>
+                                        <div class="font-amiri h4 text-primary mb-1" dir="rtl">اِسْم مَفْعُول</div>
                                         <div class="small fw-medium text-muted">Ism Mafool</div>
                                     </div>
                                 </td>
-                                <td class="align-middle text-center py-4">
+                                <td class="align-middle text-center py-4 border-0">
                                     <div class="d-inline-block bg-primary-subtle rounded-3 px-4 py-3 border border-primary-subtle">
                                         <div class="font-amiri h4 text-primary mb-1" dir="rtl">مَفْعُول</div>
-                                        <div class="small fw-bold text-primary text-uppercase ls-wide" style="font-size: 0.7rem;">Receiver of action</div>
+                                        <div class="small fw-bold text-primary text-uppercase ls-wide" style="font-size: 0.65rem;">Receiver</div>
                                     </div>
                                 </td>
-                                <td class="align-middle text-center py-4">
+                                <td class="align-middle text-center py-4 border-0">
                                     <div class="d-inline-block">
-                                        <div class="font-amiri h4 text-primary mb-2" dir="rtl">مَكْتُوب</div>
+                                        <div class="font-amiri h4 text-primary mb-1" dir="rtl">مَكْتُوب</div>
                                         <div class="small fw-medium text-muted">"Written"</div>
                                     </div>
                                 </td>
-                                <td class="align-middle text-center" style="max-width: 250px;">
-                                    <p class="text-secondary mb-0 fw-normal fst-italic" style="font-size: 0.8rem;">The person or entity the action is performed upon.</p>
+                                <td class="align-middle text-center border-0" style="max-width: 250px;">
+                                    <p class="text-muted mb-0 small">The person or entity the action is performed upon.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -176,182 +177,70 @@
                 <div class="mb-5">
                     <h3 class="fw-bold text-dark mb-4">Quranic Examples</h3>
                     <div class="row g-4">
-                        <!-- Madi -->
                         <div class="col-md-6 col-lg-4">
-                            <div class="card h-100 border-0 shadow-sm rounded-4">
+                            <div class="card card-top-md h-100">
                                 <div class="card-body p-4">
-                                    <div class="d-flex justify-content-between align-items-center mb-3">
-                                        <h6 class="text-primary fw-bold text-uppercase small mb-0">Past</h6>
-                                        <h6 class="text-primary fw-bold font-amiri mb-0" dir="rtl">مَاضِي</h6>
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <h6 class="text-primary fw-bold text-uppercase small mb-0 ls-wide">Past Forms</h6>
+                                        <span class="font-amiri h5 mb-0 text-primary" dir="rtl">مَاضِي</span>
                                     </div>
-                                    <div class="mb-3 p-3 bg-light rounded-3">
-                                        <p class="font-amiri h5 mb-1" dir="rtl"><span class="text-primary fw-bold border-bottom border-2 border-primary">خَلَقَ</span> الْإِنْسَانَ <span class="small text-muted fw-normal">(96:2)</span></p>
-                                        <p class="small text-muted mb-0">"He created man"</p>
-                                        <p class="small text-muted mb-0" style="font-size: 0.75rem;">മനുഷ്യനെ അവൻ സൃഷ്ടിച്ചു</p>
-                                    </div>
-                                    <div class="mb-3 p-3 bg-light rounded-3">
-                                        <p class="font-amiri h5 mb-1" dir="rtl"><span class="text-primary fw-bold border-bottom border-2 border-primary">نَصَرَ</span>كَ اللَّهُ <span class="small text-muted fw-normal">(48:3)</span></p>
-                                        <p class="small text-muted mb-0">"Allah helped you"</p>
-                                        <p class="small text-muted mb-0" style="font-size: 0.75rem;">അല്ലാഹു നിന്നെ സഹായിച്ചു</p>
-                                    </div>
-                                    <div class="mb-3 p-3 bg-light rounded-3">
-                                        <p class="font-amiri h5 mb-1" dir="rtl"><span class="text-primary fw-bold border-bottom border-2 border-primary">قَالَ</span> لَهُ صَاحِبُهُ <span class="small text-muted fw-normal">(18:37)</span></p>
-                                        <p class="small text-muted mb-0">"His companion said to him"</p>
-                                        <p class="small text-muted mb-0" style="font-size: 0.75rem;">അവന്റെ കൂട്ടുകാരൻ അവനോട് പറഞ്ഞു</p>
-                                    </div>
-                                    <div class="mb-3 p-3 bg-light rounded-3">
-                                        <p class="font-amiri h5 mb-1" dir="rtl"><span class="text-primary fw-bold border-bottom border-2 border-primary">آمَنَ</span> الرَّسُولُ <span class="small text-muted fw-normal">(2:285)</span></p>
-                                        <p class="small text-muted mb-0">"The Messenger believed"</p>
-                                        <p class="small text-muted mb-0" style="font-size: 0.75rem;">പ്രവാചകൻ വിശ്വസിച്ചു</p>
-                                    </div>
-                                    <div class="p-3 bg-light rounded-3">
-                                        <p class="font-amiri h5 mb-1" dir="rtl"><span class="text-primary fw-bold border-bottom border-2 border-primary">كَتَبَ</span> عَلَىٰ نَفْسِهِ الرَّحْمَةَ <span class="small text-muted fw-normal">(6:54)</span></p>
-                                        <p class="small text-muted mb-0">"He prescribed mercy"</p>
-                                        <p class="small text-muted mb-0" style="font-size: 0.75rem;">അവൻ തന്റെ മേൽ കാരുണ്യം രേഖപ്പെടുത്തി</p>
+                                    <div class="space-y-4">
+                                        <div class="p-3 bg-light rounded-4 mb-3 border border-light">
+                                            <p class="font-amiri h5 mb-2 text-dark" dir="rtl"><span class="text-primary fw-bold border-bottom border-2 border-primary">خَلَقَ</span> الْإِنْسَانَ</p>
+                                            <p class="small text-muted mb-1 fw-medium">"He created man"</p>
+                                            <p class="small text-muted opacity-75 mb-0" style="font-size: 0.75rem;">മനുഷ്യനെ അവൻ സൃഷ്ടിച്ചു</p>
+                                        </div>
+                                        <div class="p-3 bg-light rounded-4 mb-3 border border-light">
+                                            <p class="font-amiri h5 mb-2 text-dark" dir="rtl"><span class="text-primary fw-bold border-bottom border-2 border-primary">نَصَرَ</span>كَ اللَّهُ</p>
+                                            <p class="small text-muted mb-1 fw-medium">"Allah helped you"</p>
+                                            <p class="small text-muted opacity-75 mb-0" style="font-size: 0.75rem;">അല്ലാഹു നിന്നെ സഹായിച്ചു</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Mudari -->
+
                         <div class="col-md-6 col-lg-4">
-                            <div class="card h-100 border-0 shadow-sm rounded-4">
+                            <div class="card card-top-lg h-100">
                                 <div class="card-body p-4">
-                                    <div class="d-flex justify-content-between align-items-center mb-3">
-                                        <h6 class="text-primary fw-bold text-uppercase small mb-0">Present</h6>
-                                        <h6 class="text-primary fw-bold font-amiri mb-0" dir="rtl">مُضَارِع</h6>
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <h6 class="text-primary fw-bold text-uppercase small mb-0 ls-wide">Present Forms</h6>
+                                        <span class="font-amiri h5 mb-0 text-primary" dir="rtl">مُضَارِع</span>
                                     </div>
-                                    <div class="mb-3 p-3 bg-light rounded-3">
-                                        <p class="font-amiri h5 mb-1" dir="rtl"><span class="text-primary fw-bold border-bottom border-2 border-primary">يَعْلَمُ</span> مَا فِي السَّمَاوَاتِ <span class="small text-muted fw-normal">(3:29)</span></p>
-                                        <p class="small text-muted mb-0">"He knows what is in the heavens"</p>
-                                        <p class="small text-muted mb-0" style="font-size: 0.75rem;">ആകാശങ്ങളിലുള്ളത് അവൻ അറിയുന്നു</p>
-                                    </div>
-                                    <div class="mb-3 p-3 bg-light rounded-3">
-                                        <p class="font-amiri h5 mb-1" dir="rtl"><span class="text-primary fw-bold border-bottom border-2 border-primary">يَنْصُرُ</span> مَنْ يَشَاءُ <span class="small text-muted fw-normal">(30:5)</span></p>
-                                        <p class="small text-muted mb-0">"He helps whom He wills"</p>
-                                        <p class="small text-muted mb-0" style="font-size: 0.75rem;">താൻ ഉദ്ദേശിക്കുന്നവരെ അവൻ സഹായിക്കുന്നു</p>
-                                    </div>
-                                    <div class="mb-3 p-3 bg-light rounded-3">
-                                        <p class="font-amiri h5 mb-1" dir="rtl"><span class="text-primary fw-bold border-bottom border-2 border-primary">يَقُولُ</span> الْإِنْسَانُ <span class="small text-muted fw-normal">(75:10)</span></p>
-                                        <p class="small text-muted mb-0">"Man will say"</p>
-                                        <p class="small text-muted mb-0" style="font-size: 0.75rem;">മനുഷ്യൻ പറയും</p>
-                                    </div>
-                                    <div class="mb-3 p-3 bg-light rounded-3">
-                                        <p class="font-amiri h5 mb-1" dir="rtl"><span class="text-primary fw-bold border-bottom border-2 border-primary">يُحِبُّ</span> الْمُحْسِنِينَ <span class="small text-muted fw-normal">(2:195)</span></p>
-                                        <p class="small text-muted mb-0">"He loves the doers of good"</p>
-                                        <p class="small text-muted mb-0" style="font-size: 0.75rem;">നന്മ ചെയ്യുന്നവരെ അവൻ ഇഷ്ടപ്പെടുന്നു</p>
-                                    </div>
-                                    <div class="p-3 bg-light rounded-3">
-                                        <p class="font-amiri h5 mb-1" dir="rtl"><span class="text-primary fw-bold border-bottom border-2 border-primary">يَهْدِي</span> مَنْ يَشَاءُ <span class="small text-muted fw-normal">(2:213)</span></p>
-                                        <p class="small text-muted mb-0">"He guides whom He wills"</p>
-                                        <p class="small text-muted mb-0" style="font-size: 0.75rem;">താൻ ഉദ്ദേശിക്കുന്നവരെ അവൻ സന്മാർഗത്തിലാക്കുന്നു</p>
+                                    <div class="space-y-4">
+                                        <div class="p-3 bg-light rounded-4 mb-3 border border-light">
+                                            <p class="font-amiri h5 mb-2 text-dark" dir="rtl"><span class="text-primary fw-bold border-bottom border-2 border-primary">يَعْلَمُ</span> مَا فِي السَّمَاوَاتِ</p>
+                                            <p class="small text-muted mb-1 fw-medium">"He knows what is in the heavens"</p>
+                                            <p class="small text-muted opacity-75 mb-0" style="font-size: 0.75rem;">ആകാശങ്ങളിലുള്ളത് അവൻ അറിയുന്നു</p>
+                                        </div>
+                                        <div class="p-3 bg-light rounded-4 mb-3 border border-light">
+                                            <p class="font-amiri h5 mb-2 text-dark" dir="rtl"><span class="text-primary fw-bold border-bottom border-2 border-primary">يَنْصُرُ</span> مَنْ يَشَاءُ</p>
+                                            <p class="small text-muted mb-1 fw-medium">"He helps whom He wills"</p>
+                                            <p class="small text-muted opacity-75 mb-0" style="font-size: 0.75rem;">താൻ ഉദ്ദേശിക്കുന്നവരെ അവൻ സഹായിക്കുന്നു</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Amr -->
+
                         <div class="col-md-6 col-lg-4">
-                            <div class="card h-100 border-0 shadow-sm rounded-4">
+                            <div class="card card-top-xl h-100">
                                 <div class="card-body p-4">
-                                    <div class="d-flex justify-content-between align-items-center mb-3">
-                                        <h6 class="text-primary fw-bold text-uppercase small mb-0">Command</h6>
-                                        <h6 class="text-primary fw-bold font-amiri mb-0" dir="rtl">أَمْر</h6>
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <h6 class="text-primary fw-bold text-uppercase small mb-0 ls-wide">Command Forms</h6>
+                                        <span class="font-amiri h5 mb-0 text-primary" dir="rtl">أَمْر</span>
                                     </div>
-                                    <div class="mb-3 p-3 bg-light rounded-3">
-                                        <p class="font-amiri h5 mb-1" dir="rtl"><span class="text-primary fw-bold border-bottom border-2 border-primary">اقْرَأْ</span> بِاسْمِ رَبِّكَ <span class="small text-muted fw-normal">(96:1)</span></p>
-                                        <p class="small text-muted mb-0">"Read in the name of your Lord"</p>
-                                        <p class="small text-muted mb-0" style="font-size: 0.75rem;">നിന്റെ രക്ഷിതാവിന്റെ നാമത്തിൽ വായിക്കുക</p>
-                                    </div>
-                                    <div class="mb-3 p-3 bg-light rounded-3">
-                                        <p class="font-amiri h5 mb-1" dir="rtl"><span class="text-primary fw-bold border-bottom border-2 border-primary">قُلْ</span> هُوَ اللَّهُ أَحَدٌ <span class="small text-muted fw-normal">(112:1)</span></p>
-                                        <p class="small text-muted mb-0">"Say, He is Allah, One"</p>
-                                        <p class="small text-muted mb-0" style="font-size: 0.75rem;">പറയുക: അവൻ അല്ലാഹു ഏകനാകുന്നു</p>
-                                    </div>
-                                    <div class="mb-3 p-3 bg-light rounded-3">
-                                        <p class="font-amiri h5 mb-1" dir="rtl"><span class="text-primary fw-bold border-bottom border-2 border-primary">اُعْبُدُوا</span> اللَّهَ <span class="small text-muted fw-normal">(2:21)</span></p>
-                                        <p class="small text-muted mb-0">"Worship Allah"</p>
-                                        <p class="small text-muted mb-0" style="font-size: 0.75rem;">അല്ലാഹുവെ ആരാധിക്കുക</p>
-                                    </div>
-                                    <div class="mb-3 p-3 bg-light rounded-3">
-                                        <p class="font-amiri h5 mb-1" dir="rtl"><span class="text-primary fw-bold border-bottom border-2 border-primary">أَقِيمُوا</span> الصَّلَاةَ <span class="small text-muted fw-normal">(2:43)</span></p>
-                                        <p class="small text-muted mb-0">"Establish prayer"</p>
-                                        <p class="small text-muted mb-0" style="font-size: 0.75rem;">നമസ്കാരം നിലനിർത്തുക</p>
-                                    </div>
-                                    <div class="p-3 bg-light rounded-3">
-                                        <p class="font-amiri h5 mb-1" dir="rtl"><span class="text-primary fw-bold border-bottom border-2 border-primary">آتُوا</span> الزَّكَاةَ <span class="small text-muted fw-normal">(2:43)</span></p>
-                                        <p class="small text-muted mb-0">"Give zakah"</p>
-                                        <p class="small text-muted mb-0" style="font-size: 0.75rem;">സകാത്ത് നൽകുക</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Ism Fail -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card h-100 border-0 shadow-sm rounded-4">
-                                <div class="card-body p-4">
-                                    <div class="d-flex justify-content-between align-items-center mb-3">
-                                        <h6 class="text-primary fw-bold text-uppercase small mb-0">Ism Fail</h6>
-                                        <h6 class="text-primary fw-bold font-amiri mb-0" dir="rtl">اِسْم فَاعِل</h6>
-                                    </div>
-                                    <div class="mb-3 p-3 bg-light rounded-3">
-                                        <p class="font-amiri h5 mb-1" dir="rtl">أَنَا <span class="text-primary fw-bold border-bottom border-2 border-primary">خَالِقٌ</span> بَشَرًا <span class="small text-muted fw-normal">(38:71)</span></p>
-                                        <p class="small text-muted mb-0">"I am a creator of a human"</p>
-                                        <p class="small text-muted mb-0" style="font-size: 0.75rem;">ഞാൻ ഒരു മനുഷ്യനെ സൃഷ്ടിക്കുന്നവനാണ്</p>
-                                    </div>
-                                    <div class="mb-3 p-3 bg-light rounded-3">
-                                        <p class="font-amiri h5 mb-1" dir="rtl">أَلَيْسَ اللَّهُ بِ<span class="text-primary fw-bold border-bottom border-2 border-primary">عَالِمٍ</span> <span class="small text-muted fw-normal">(29:10)</span></p>
-                                        <p class="small text-muted mb-0">"Is not Allah most knowing?"</p>
-                                        <p class="small text-muted mb-0" style="font-size: 0.75rem;">എല്ലാം അറിയുന്നവൻ</p>
-                                    </div>
-                                    <div class="mb-3 p-3 bg-light rounded-3">
-                                        <p class="font-amiri h5 mb-1" dir="rtl">اللَّهُ <span class="text-primary fw-bold border-bottom border-2 border-primary">غَالِبٌ</span> عَلَى أَمْرِهِ <span class="small text-muted fw-normal">(12:21)</span></p>
-                                        <p class="small text-muted mb-0">"Allah is predominant"</p>
-                                        <p class="small text-muted mb-0" style="font-size: 0.75rem;">അല്ലാഹു തന്റെ കാര്യത്തിൽ വിജയിയാകുന്നു</p>
-                                    </div>
-                                    <div class="mb-3 p-3 bg-light rounded-3">
-                                        <p class="font-amiri h5 mb-1" dir="rtl">اللَّهُ مَعَ ال<span class="text-primary fw-bold border-bottom border-2 border-primary">صَّابِرِينَ</span> <span class="small text-muted fw-normal">(2:153)</span></p>
-                                        <p class="small text-muted mb-0">"Allah is with the patient"</p>
-                                        <p class="small text-muted mb-0" style="font-size: 0.75rem;">അല്ലാഹു ക്ഷമിക്കുന്നവരോടൊപ്പമാണ്</p>
-                                    </div>
-                                    <div class="p-3 bg-light rounded-3">
-                                        <p class="font-amiri h5 mb-1" dir="rtl">ال<span class="text-primary fw-bold border-bottom border-2 border-primary">تَّائِبُونَ</span> الْعَابِدُونَ <span class="small text-muted fw-normal">(9:112)</span></p>
-                                        <p class="small text-muted mb-0">"The repentant, the worshippers"</p>
-                                        <p class="small text-muted mb-0" style="font-size: 0.75rem;">പശ്ചാത്തപിക്കുന്നവർ, ആരാധിക്കുന്നവർ</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Ism Mafool -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card h-100 border-0 shadow-sm rounded-4">
-                                <div class="card-body p-4">
-                                    <div class="d-flex justify-content-between align-items-center mb-3">
-                                        <h6 class="text-primary fw-bold text-uppercase small mb-0">Ism Mafool</h6>
-                                        <h6 class="text-primary fw-bold font-amiri mb-0" dir="rtl">اِسْم مَفْعُول</h6>
-                                    </div>
-                                    <div class="mb-3 p-3 bg-light rounded-3">
-                                        <p class="font-amiri h5 mb-1" dir="rtl">بِالْ<span class="text-primary fw-bold border-bottom border-2 border-primary">مَعْرُوفِ</span> <span class="small text-muted fw-normal">(4:19)</span></p>
-                                        <p class="small text-muted mb-0">"In a kind way"</p>
-                                        <p class="small text-muted mb-0" style="font-size: 0.75rem;">നല്ല രീതിയിൽ</p>
-                                    </div>
-                                    <div class="mb-3 p-3 bg-light rounded-3">
-                                        <p class="font-amiri h5 mb-1" dir="rtl"><span class="text-primary fw-bold border-bottom border-2 border-primary">مَكْتُوبًا</span> عِنْدَهُمْ <span class="small text-muted fw-normal">(7:157)</span></p>
-                                        <p class="small text-muted mb-0">"Written with them"</p>
-                                        <p class="small text-muted mb-0" style="font-size: 0.75rem;">അവരുടെ അടുക്കൽ രേഖപ്പെടുത്തപ്പെട്ടത്</p>
-                                    </div>
-                                    <div class="mb-3 p-3 bg-light rounded-3">
-                                        <p class="font-amiri h5 mb-1" dir="rtl">سُرُرٌ <span class="text-primary fw-bold border-bottom border-2 border-primary">مَرْفُوعَةٌ</span> <span class="small text-muted fw-normal">(88:13)</span></p>
-                                        <p class="small text-muted mb-0">"Raised couches"</p>
-                                        <p class="small text-muted mb-0" style="font-size: 0.75rem;">ഉയർത്തപ്പെട്ട കട്ടിലുകൾ</p>
-                                    </div>
-                                    <div class="mb-3 p-3 bg-light rounded-3">
-                                        <p class="font-amiri h5 mb-1" dir="rtl">أَكْوَابٌ <span class="text-primary fw-bold border-bottom border-2 border-primary">مَوْضُوعَةٌ</span> <span class="small text-muted fw-normal">(88:14)</span></p>
-                                        <p class="small text-muted mb-0">"Placed cups"</p>
-                                        <p class="small text-muted mb-0" style="font-size: 0.75rem;">വെക്കപ്പെട്ട കോപ്പകൾ</p>
-                                    </div>
-                                    <div class="p-3 bg-light rounded-3">
-                                        <p class="font-amiri h5 mb-1" dir="rtl">كَعَصْفٍ <span class="text-primary fw-bold border-bottom border-2 border-primary">مَأْكُولٍ</span> <span class="small text-muted fw-normal">(105:5)</span></p>
-                                        <p class="small text-muted mb-0">"Like eaten straw"</p>
-                                        <p class="small text-muted mb-0" style="font-size: 0.75rem;">ഭക്ഷിക്കപ്പെട്ട വൈക്കോൽ പോലെ</p>
+                                    <div class="space-y-4">
+                                        <div class="p-3 bg-light rounded-4 mb-3 border border-light">
+                                            <p class="font-amiri h5 mb-2 text-dark" dir="rtl"><span class="text-primary fw-bold border-bottom border-2 border-primary">اقْرَأْ</span> بِاسْمِ رَبِّكَ</p>
+                                            <p class="small text-muted mb-1 fw-medium">"Read in the name of your Lord"</p>
+                                            <p class="small text-muted opacity-75 mb-0" style="font-size: 0.75rem;">നിന്റെ രക്ഷിതാവിന്റെ നാമത്തിൽ വായിക്കുക</p>
+                                        </div>
+                                        <div class="p-3 bg-light rounded-4 mb-3 border border-light">
+                                            <p class="font-amiri h5 mb-2 text-dark" dir="rtl"><span class="text-primary fw-bold border-bottom border-2 border-primary">قُلْ</span> هُوَ اللَّهُ أَحَدٌ</p>
+                                            <p class="small text-muted mb-1 fw-medium">"Say, He is Allah, One"</p>
+                                            <p class="small text-muted opacity-75 mb-0" style="font-size: 0.75rem;">പറയുക: അവൻ അല്ലാഹു ഏകനാകുന്നു</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -360,19 +249,19 @@
                 </div>
 
                 <div class="d-flex justify-content-between pt-4">
-                    <a href="chapter1.html" class="btn btn-outline-secondary rounded-pill px-4">← Chapter 1</a>
-                    <a href="chapter3.html" class="btn btn-primary rounded-pill px-4 fw-bold">Chapter 3 →</a>
+                    <a href="chapter1.html" class="btn btn-outline-primary rounded-pill px-4">← Chapter 1</a>
+                    <a href="chapter3.html" class="btn btn-primary rounded-pill px-4 fw-bold shadow-sm">Chapter 3 →</a>
                 </div>
 
-                <footer class="text-center py-4 mt-4 border-top opacity-50">
-                    <p class="small mb-0">Powered by <a href="https://www.jakacloud.com" class="text-decoration-none text-dark fw-bold" target="_blank">www.jakacloud.com</a></p>
+                <footer class="text-center pt-5 pb-4 mt-5 border-top opacity-75">
+                    <p class="small text-muted mb-0">Powered by <a href="https://www.jakacloud.com" class="text-decoration-none text-primary fw-bold" target="_blank">www.jakacloud.com</a></p>
                 </footer>
             </div>
         </main>
     </div>
 
     <!-- Overlay for mobile -->
-    <div id="sidebar-overlay" class="position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-10 backdrop-blur d-none z-1040" style="backdrop-filter: blur(4px);" onclick="toggleSidebar()"></div>
+    <div id="sidebar-overlay" class="position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-10 backdrop-blur d-none z-1040" onclick="toggleSidebar()"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
