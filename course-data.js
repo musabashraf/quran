@@ -16,7 +16,7 @@ const QuranCourseData = {
         },
         {
             id: 3,
-            title: "Mudari Forms & Atayna",
+            title: "Present Forms",
             description: "Master the present and future tense using the simple 'Atayna' prefix method.",
             url: "chapter3.html",
             color: "primary"
