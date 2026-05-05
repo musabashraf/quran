@@ -112,5 +112,7 @@ body {
     50% { transform: translateY(-10px); }
 }
 
+.border-gold { border-color: var(--gold-accent) !important; }
+
 /* RTL Text */
 [dir="rtl"] { letter-spacing: 0; }
