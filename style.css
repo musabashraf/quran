@@ -9,6 +9,13 @@
 body {
     font-family: 'Inter', -apple-system, sans-serif;
     color: #1f2937;
+    background-color: #fcfdfc; /* Extremely light emerald tint */
+}
+
+.card-header {
+    background-color: rgba(6, 95, 70, 0.04) !important; /* Slightly darker shade using theme primary */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+    padding: 1.25rem 1.5rem !important;
 }
 
 .font-amiri {
@@ -56,21 +63,6 @@ body {
 
 .main-content { margin-left: 280px; }
 @media (max-width: 991.98px) { .main-content { margin-left: 0; } }
-
-/* Cards - Premium Customization */
-.card {
-    border-radius: 1.5rem !important;
-    border: 1px solid rgba(0, 0, 0, 0.1) !important;
-    box-shadow: var(--card-shadow);
-    transition: transform 0.3s ease;
-}
-
-.card.card-top-blue { border-top: 4px solid #3b82f6 !important; }
-.card.card-top-green { border-top: 4px solid #10b981 !important; }
-.card.card-top-purple { border-top: 4px solid #8b5cf6 !important; }
-.card.card-top-gold { border-top: 4px solid var(--gold-accent) !important; }
-
-.card:hover { transform: translateY(-5px); }
 
 /* Hero & Glass Components */
 .hero-box {
