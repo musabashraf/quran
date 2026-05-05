@@ -27,6 +27,13 @@ const QuranCourseData = {
             description: "These are essential pronouns attached to the end of words in the Quran which clarify ownership and objects. Master these 'connectors' using the simple HUNAKANEE rule.",
             url: "chapter4.html",
             color: "warning"
+        },
+        {
+            id: 5,
+            title: "Prepositions",
+            description: "Master the 'Huroof al-Jarr'—the power particles like Fi, Bi, and Min that change word endings and connect meanings across the Quran.",
+            url: "chapter5.html",
+            color: "danger"
         }
     ]
 };
