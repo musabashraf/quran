@@ -13,4 +13,4 @@ Folowing are the initial chapters and we will add to it.
 1. **Word Classification** – Every single word in the Quran falls into one of these three simple categories: Ism (Nouns), Fil (Verbs), and Huroof (Particles).
 2. **The 5 Basic Forms** – Every 3-letter root in the Quran follows five fundamental transformations: Past, Present, Command, Ism Fail, and Ism Mafool.
 3. **Mudari Forms & Atayna** – Understand the present and future tense through the simple 'Atayna' prefix rule (A-T-Y-N).
-4. **Attached Pronouns & Hunakanee** – Master the "connectors" that attach to the end of words using the simple 'Hunakanee' rule (HU-NA-KA-NEE).
+4. **Attached Pronouns & Hunakanee** – Master the "connectors" (Him, Us, You, Me) and their plurals (Them, You all) using the 'Hunakanee' rule.
