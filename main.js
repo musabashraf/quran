@@ -93,8 +93,35 @@ function loadSyllabusGrid() {
     gridElement.innerHTML = gridHtml;
 }
 
+function automateAyahLinks() {
+    const mainContent = document.querySelector('.main-content');
+    if (!mainContent) return;
+
+    // Regex to match (Surah:Ayah)
+    const regex = /\((\d+):(\d+)\)/g;
+    
+    // Target elements that usually contain these references
+    const elements = mainContent.querySelectorAll('.small.text-muted, .fw-normal');
+    
+    elements.forEach(el => {
+        // Only process if it has the pattern and doesn't already have a link
+        if (regex.test(el.innerText) && !el.querySelector('a')) {
+            el.innerHTML = el.innerText.replace(regex, (match, surah, ayah) => {
+                return `<a href="https://quran.com/${surah}/${ayah}" 
+                           target="_blank" 
+                           class="text-decoration-none" 
+                           style="color: #0d6efd; font-size: 0.85em; font-weight: 600; transition: all 0.2s; cursor: pointer;"
+                           onmouseover="this.style.textDecoration='underline'; this.style.color='#0a58ca'"
+                           onmouseout="this.style.textDecoration='none'; this.style.color='#0d6efd'"
+                           title="Verify on Quran.com">${match}</a>`;
+            });
+        }
+    });
+}
+
 // Initialize when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
     loadSidebar();
     loadSyllabusGrid();
+    automateAyahLinks();
 });
