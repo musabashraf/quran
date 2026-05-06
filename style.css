@@ -61,6 +61,10 @@ body {
     box-shadow: 0 4px 12px rgba(var(--bs-primary-rgb), 0.2);
 }
 
+.sidebar .nav-link.active span {
+    color: white !important;
+}
+
 .main-content { margin-left: 280px; }
 @media (max-width: 991.98px) { .main-content { margin-left: 0; } }
 

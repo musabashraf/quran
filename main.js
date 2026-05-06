@@ -14,33 +14,15 @@ function loadSidebar() {
     const sidebarElement = document.getElementById('sidebar');
     if (!sidebarElement) return;
 
-    // Build sidebar links dynamically
+    // Build links
     let linksHtml = `<a href="index.html" class="nav-link">Introduction</a>`;
-    
     QuranCourseData.chapters.forEach(ch => {
-        linksHtml += `<a href="${ch.url}" class="nav-link">${ch.id}. ${ch.title}</a>`;
+        const titleWithoutBrackets = ch.title.replace('(', '').replace(')', '');
+        linksHtml += `<a href="${ch.url}" class="nav-link">${ch.id}. ${titleWithoutBrackets}</a>`;
     });
 
+    // Master Sidebar Template
     const sidebarTemplate = `
-        <style>
-            .sidebar .nav-link {
-                border-radius: 0.75rem;
-                font-weight: 500;
-                color: #6b7280 !important;
-                transition: all 0.2s ease;
-                margin-bottom: 0.5rem;
-                padding: 0.75rem 1rem;
-            }
-            .sidebar .nav-link:hover {
-                background-color: rgba(6, 95, 70, 0.05);
-                color: #065f46 !important;
-            }
-            .sidebar .nav-link.active {
-                background-color: #065f46 !important;
-                color: white !important;
-                box-shadow: 0 4px 12px rgba(6, 95, 70, 0.2);
-            }
-        </style>
         <div class="p-4 h-100 d-flex flex-column">
             <div class="d-flex align-items-center justify-content-between mb-5 px-2">
                 <div class="d-flex align-items-center gap-2">
@@ -59,14 +41,12 @@ function loadSidebar() {
 
     sidebarElement.innerHTML = sidebarTemplate;
 
-    // Set active link based on current URL
+    // Set active link
     const currentPath = window.location.pathname.split('/').pop() || 'index.html';
     const navLinks = sidebarElement.querySelectorAll('.nav-link');
-    
     navLinks.forEach(link => {
         const linkPath = link.getAttribute('href');
-        const path = linkPath === 'index.html' ? ['index.html', ''] : [linkPath];
-        if (path.includes(currentPath)) {
+        if (linkPath === currentPath || (currentPath === '' && linkPath === 'index.html')) {
             link.classList.add('active');
         }
     });
