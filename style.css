@@ -120,3 +120,22 @@ body {
 
 /* RTL Text */
 [dir="rtl"] { letter-spacing: 0; }
+
+.intro-text {
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 767.98px) {
+    .intro-text {
+        font-size: 0.92rem;
+    }
+    .intro-text li {
+        gap: 0.5rem !important;
+    }
+    .btn-mobile-wide {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+        font-size: 0.85rem !important;
+    }
+}
