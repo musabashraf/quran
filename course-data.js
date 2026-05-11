@@ -37,16 +37,23 @@ const QuranCourseData = {
         },
         {
             id: 6,
-            title: "Prepositions <span class='font-amiri fw-bold text-primary'>حُرُوف الْجَرّ</span>",
-            description: "Master the 'Huroof al-Jarr'—the power particles like Fi, Bi, and Min that change word endings and connect meanings across the Quran.",
+            title: "Present Verbs <span class='font-amiri fw-bold text-primary'>(مُضَارِع)</span>",
+            description: "Master the 8 core forms of the present tense that tell you WHO is doing the action now or in the future.",
             url: "chapter6.html",
-            color: "danger"
+            color: "success"
         },
         {
             id: 7,
+            title: "Prepositions <span class='font-amiri fw-bold text-primary'>حُرُوف الْجَرّ</span>",
+            description: "Master the 'Huroof al-Jarr'—the power particles like Fi, Bi, and Min that change word endings and connect meanings across the Quran.",
+            url: "chapter7.html",
+            color: "danger"
+        },
+        {
+            id: 8,
             title: "Verb Forms <span class='font-amiri fw-bold text-primary'>(أَوْزَان)</span>",
             description: "See how roots upgrade their meaning across the 5 most common verb families in the Quran.",
-            url: "chapter7.html",
+            url: "chapter8.html",
             color: "primary"
         }
     ]
