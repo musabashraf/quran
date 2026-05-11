@@ -16,17 +16,17 @@ const QuranCourseData = {
         },
         {
             id: 3,
-            title: "Present Subject <span class='font-amiri fw-bold text-primary'>مُضَارِع</span>",
-            description: "Master the present and future tense using the simple 'Yatan' prefix method.",
+            title: "Pronouns <span class='font-amiri fw-bold text-primary'>(الضَّمِير)</span>",
+            description: "These are essential pronouns attached to the end of words in the Quran which clarify ownership and objects. Master these 'connectors' using the simple HUNAKANEE rule.",
             url: "chapter3.html",
-            color: "primary"
+            color: "warning"
         },
         {
             id: 4,
-            title: "Pronouns <span class='font-amiri fw-bold text-primary'>(الضَّمِير)</span>",
-            description: "These are essential pronouns attached to the end of words in the Quran which clarify ownership and objects. Master these 'connectors' using the simple HUNAKANEE rule.",
+            title: "Present Subject <span class='font-amiri fw-bold text-primary'>مُضَارِع</span>",
+            description: "Master the present and future tense using the simple 'Yatan' prefix method.",
             url: "chapter4.html",
-            color: "warning"
+            color: "primary"
         },
         {
             id: 5,
