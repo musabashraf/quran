@@ -9,15 +9,15 @@ const QuranCourseData = {
         },
         {
             id: 2,
-            title: "The 5 Basic Forms",
+            title: "The Root <span class='font-amiri fw-bold text-primary'>(جِذْر)</span>",
             description: "Understand the fundamental DNA of Arabic grammar through five core transformations.",
             url: "chapter2.html",
             color: "success"
         },
         {
             id: 3,
-            title: "Present <span class='font-amiri fw-bold text-primary'>مُضَارِع</span>",
-            description: "Master the present and future tense using the simple 'Atayna' prefix method.",
+            title: "Present Subject <span class='font-amiri fw-bold text-primary'>مُضَارِع</span>",
+            description: "Master the present and future tense using the simple 'Yatan' prefix method.",
             url: "chapter3.html",
             color: "primary"
         },
