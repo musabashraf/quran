@@ -30,8 +30,8 @@ const QuranCourseData = {
         },
         {
             id: 5,
-            title: "The 14 Past <span class='font-amiri fw-bold text-primary'>(مَاضِي)</span>",
-            description: "Master the 14 fundamental 'Subject' endings of the past tense that tell you exactly WHO did the action.",
+            title: "Past Verbs <span class='font-amiri fw-bold text-primary'>(مَاضِي)</span>",
+            description: "Master the fundamental 'Subject' endings of the past tense that tell you exactly WHO did the action.",
             url: "chapter5.html",
             color: "success"
         },
