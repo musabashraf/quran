@@ -3,7 +3,7 @@ const QuranCourseData = {
         {
             id: 1,
             title: "Word Classification",
-            description: "Learn how every word in the Quran is either an Ism (Name), Verb (Verb), or Huroof (Particle).",
+            description: "Learn how every word in the Quran is either a Fil (Verb), an Ism (Name), or a Huroof (Particle).",
             url: "chapter1.html",
             color: "primary"
         },
@@ -23,8 +23,8 @@ const QuranCourseData = {
         },
         {
             id: 4,
-            title: "Present Subject <span class='font-amiri fw-bold text-primary'>مُضَارِع</span>",
-            description: "Master the present and future tense using the simple 'Yatan' prefix method.",
+            title: "Three states <span class='font-amiri fw-bold text-primary'>مَرْفُوع · مَنْصُوب · مَجْرُور</span>",
+            description: "Hear the last syllable: marfu‘ (often u / ḍamma), mansūb (often a / fatḥa), majrūr (often i / kasra)—plus simple pause (waqf) sights before full chapters on verbs and jar.",
             url: "chapter4.html",
             color: "primary"
         },
