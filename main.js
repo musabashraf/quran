@@ -17,8 +17,7 @@ function loadSidebar() {
     // Build links
     let linksHtml = `<a href="index.html" class="nav-link">Introduction</a>`;
     QuranCourseData.chapters.forEach(ch => {
-        const titleWithoutBrackets = ch.title.replace('(', '').replace(')', '');
-        linksHtml += `<a href="${ch.url}" class="nav-link">${ch.id}. ${titleWithoutBrackets}</a>`;
+        linksHtml += `<a href="${ch.url}" class="nav-link">${ch.id}. ${ch.title}</a>`;
     });
 
     // Master Sidebar Template
