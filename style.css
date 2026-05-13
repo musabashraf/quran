@@ -161,7 +161,7 @@ body {
 .classification-item .arabic {
     font-size: 1.85rem;
     display: block;
-    margin-bottom: 0.15rem;
+    margin-bottom: 0.5rem;
     color: var(--bs-primary);
     font-weight: 700;
 }
