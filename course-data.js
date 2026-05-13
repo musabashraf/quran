@@ -23,10 +23,10 @@ const QuranCourseData = {
         },
         {
             id: 4,
-            title: "<span class='font-amiri fw-bold text-primary'>مَرْفُوع · مَنْصُوب · مَجْرُور</span> (Three states)",
-            description: "Hear the last syllable: marfu‘ (often u / ḍamma), mansūb (often a / fatḥa), majrūr (often i / kasra)—plus simple pause (waqf) sights before full chapters on verbs and jar.",
+            title: "<span class='font-amiri fw-bold text-primary'>الْجَمْع</span> (Plurals)",
+            description: "Learn how to identify plurals in the Quran, from the regular 'Sound' endings to the unique 'Broken' patterns.",
             url: "chapter4.html",
-            color: "primary"
+            color: "success"
         },
         {
             id: 5,
@@ -58,10 +58,10 @@ const QuranCourseData = {
         },
         {
             id: 9,
-            title: "<span class='font-amiri fw-bold text-primary'>الْجَمْع</span> (Plurals)",
-            description: "Learn how to identify plurals in the Quran, from the regular 'Sound' endings to the unique 'Broken' patterns.",
+            title: "<span class='font-amiri fw-bold text-primary'>مَرْفُوع · مَنْصُوب · مَجْرُور</span> (Three states)",
+            description: "Hear the last syllable: marfu‘ (often u / ḍamma), mansūb (often a / fatḥa), majrūr (often i / kasra)—plus simple pause (waqf) sights before full chapters on verbs and jar.",
             url: "chapter9.html",
-            color: "success"
+            color: "primary"
         }
     ]
 };
