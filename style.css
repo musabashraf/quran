@@ -27,16 +27,16 @@ body {
     width: 280px;
     height: 100vh;
     position: fixed;
-    left: 0;
+    right: 0;
     top: 0;
     z-index: 1050;
     background-color: #f4f7f5 !important;
-    border-right: 1px solid rgba(0, 0, 0, 0.05) !important;
+    border-left: 1px solid rgba(0, 0, 0, 0.05) !important;
     transition: transform 0.4s ease;
 }
 
 @media (max-width: 991.98px) {
-    .sidebar { transform: translateX(-100%); }
+    .sidebar { transform: translateX(100%); }
     .sidebar.show { transform: translateX(0); }
 }
 
@@ -65,8 +65,8 @@ body {
     color: white !important;
 }
 
-.main-content { margin-left: 280px; }
-@media (max-width: 991.98px) { .main-content { margin-left: 0; } }
+.main-content { margin-right: 280px; }
+@media (max-width: 991.98px) { .main-content { margin-right: 0; } }
 
 /* Hero & Glass Components */
 .hero-box {
