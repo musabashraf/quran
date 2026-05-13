@@ -2,7 +2,7 @@ const QuranCourseData = {
     chapters: [
         {
             id: 1,
-            title: "Word Classification",
+            title: "<span class='font-amiri fw-bold text-primary'>تَقْسِيمُ الْكَلِمَاتِ</span> (Word Classification)",
             description: "Learn how every word in the Quran is either a Fil (Verb), an Ism (Name), or a Huroof (Particle).",
             url: "chapter1.html",
             color: "primary"
@@ -55,6 +55,13 @@ const QuranCourseData = {
             description: "See how roots upgrade their meaning across the 5 most common verb families in the Quran.",
             url: "chapter8.html",
             color: "primary"
+        },
+        {
+            id: 9,
+            title: "<span class='font-amiri fw-bold text-primary'>الْجَمْع</span> (Plurals)",
+            description: "Learn how to identify plurals in the Quran, from the regular 'Sound' endings to the unique 'Broken' patterns.",
+            url: "chapter9.html",
+            color: "success"
         }
     ]
 };
