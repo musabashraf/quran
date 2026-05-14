@@ -2,7 +2,7 @@ const QuranCourseData = {
     chapters: [
         {
             id: 1,
-            title: "<span class='font-amiri fw-bold text-primary'>تَقْسِيمُ الْكَلِمَاتِ</span> (Word Classification)",
+            title: "<span class='font-amiri fw-bold text-primary'>أَنْوَاع الْكَلِمَة</span> (Word Types)",
             description: "Learn how every word in the Quran is either a Fil (Verb), an Ism (Name), or a Huroof (Particle).",
             url: "chapter1.html",
             color: "primary"
@@ -61,6 +61,13 @@ const QuranCourseData = {
             title: "<span class='font-amiri fw-bold text-primary'>مَرْفُوع · مَنْصُوب · مَجْرُور</span> (Three states)",
             description: "Hear the last syllable: marfu‘ (often u / ḍamma), mansūb (often a / fatḥa), majrūr (often i / kasra)—plus simple pause (waqf) sights before full chapters on verbs and jar.",
             url: "chapter9.html",
+            color: "primary"
+        },
+        {
+            id: 10,
+            title: "<span class='font-amiri fw-bold text-primary'>الْمَرْجِع الْكَبِير</span> (Master Table)",
+            description: "A consolidated master reference table combining pronouns and both verb tenses for quick lookups.",
+            url: "chapter10.html",
             color: "primary"
         }
     ]
