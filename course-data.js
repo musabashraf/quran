@@ -37,36 +37,36 @@ const QuranCourseData = {
         },
         {
             id: 6,
-            title: "<span class='font-amiri fw-bold text-primary'>الْجَمْع</span> (Plurals)",
-            description: "Learn how to identify plurals in the Quran, from the regular 'Sound' endings to the unique 'Broken' patterns.",
+            title: "<span class='font-amiri fw-bold text-primary'>الْمَرْجِع</span> (Master Table)",
+            description: "A consolidated master reference table combining pronouns and both verb tenses for quick lookups.",
             url: "chapter6.html",
-            color: "success"
-        },
-        {
-            id: 7,
-            title: "<span class='font-amiri fw-bold text-primary'>حُرُوف الْجَرّ</span> (Prepositions)",
-            description: "Master the 'Huroof al-Jarr'—the power particles like Fi, Bi, and Min that change word endings and connect meanings across the Quran.",
-            url: "chapter7.html",
-            color: "danger"
-        },
-        {
-            id: 8,
-            title: "<span class='font-amiri fw-bold text-primary'>أَوْزَان</span> (Verb Forms)",
-            description: "See how roots upgrade their meaning across the 5 most common verb families in the Quran.",
-            url: "chapter8.html",
             color: "primary"
         },
         {
+            id: 7,
+            title: "<span class='font-amiri fw-bold text-primary'>الْجَمْع</span> (Plurals)",
+            description: "Learn how to identify plurals in the Quran, from the regular 'Sound' endings to the unique 'Broken' patterns.",
+            url: "chapter7.html",
+            color: "success"
+        },
+        {
+            id: 8,
+            title: "<span class='font-amiri fw-bold text-primary'>حُرُوف الْجَرّ</span> (Prepositions)",
+            description: "Master the 'Huroof al-Jarr'—the power particles like Fi, Bi, and Min that change word endings and connect meanings across the Quran.",
+            url: "chapter8.html",
+            color: "danger"
+        },
+        {
             id: 9,
-            title: "<span class='font-amiri fw-bold text-primary'>مَرْفُوع · مَنْصُوب · مَجْرُور</span> (Three states)",
-            description: "Hear the last syllable: marfu‘ (often u / ḍamma), mansūb (often a / fatḥa), majrūr (often i / kasra)—plus simple pause (waqf) sights before full chapters on verbs and jar.",
+            title: "<span class='font-amiri fw-bold text-primary'>أَوْزَان</span> (Verb Forms)",
+            description: "See how roots upgrade their meaning across the 5 most common verb families in the Quran.",
             url: "chapter9.html",
             color: "primary"
         },
         {
             id: 10,
-            title: "<span class='font-amiri fw-bold text-primary'>الْمَرْجِع الْكَبِير</span> (Master Table)",
-            description: "A consolidated master reference table combining pronouns and both verb tenses for quick lookups.",
+            title: "<span class='font-amiri fw-bold text-primary'>مَرْفُوع · مَنْصُوب · مَجْرُور</span> (Three states)",
+            description: "Hear the last syllable: marfu‘ (often u / ḍamma), mansūb (often a / fatḥa), majrūr (often i / kasra)—plus simple pause (waqf) sights before full chapters on verbs and jar.",
             url: "chapter10.html",
             color: "primary"
         }
