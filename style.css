@@ -10,12 +10,30 @@ body {
     font-family: 'Inter', -apple-system, sans-serif;
     color: #1f2937;
     background-color: #fcfdfc; /* Extremely light emerald tint */
+    line-height: 1.5;
+}
+
+/* Master Mobile Adjustment - Scaledown for density */
+@media (max-width: 767.98px) {
+    html {
+        font-size: 14px; /* Default is 16px, this scales all rem units */
+    }
+    
+    .container, .container-fluid {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
 }
 
 .card-header {
     background-color: rgba(6, 95, 70, 0.04) !important; /* Slightly darker shade using theme primary */
     border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
-    padding: 1.25rem 1.5rem !important;
+    padding: 1.25rem 1.5rem 1.75rem 1.5rem !important; /* Increased bottom padding for title breathing room */
+}
+
+.table thead th {
+    padding-top: 1.25rem !important;
+    padding-bottom: 1.25rem !important;
 }
 
 .font-amiri {
@@ -78,6 +96,20 @@ body {
     box-shadow: 0 25px 50px -12px rgba(6, 95, 70, 0.4) !important;
 }
 
+@media (max-width: 767.98px) {
+    .hero-box {
+        padding: 2.5rem 0;
+        border-radius: 1.5rem;
+    }
+    .hero-box h2 {
+        font-size: 2.25rem !important; /* display-3 is too big for mobile */
+    }
+    .hero-box .mx-auto.mb-4[style*="width: 600px"] {
+        width: 100% !important;
+        margin-bottom: 1.5rem !important;
+    }
+}
+
 .hero-box img {
     position: absolute;
     inset: 0;
@@ -128,16 +160,25 @@ body {
 
 @media (max-width: 767.98px) {
     .intro-text {
-        font-size: 0.92rem;
+        font-size: 0.9rem;
     }
     .intro-text li {
         gap: 0.5rem !important;
+        margin-bottom: 0.5rem !important;
     }
     .btn-mobile-wide {
         padding-left: 0.75rem !important;
         padding-right: 0.75rem !important;
         font-size: 0.85rem !important;
     }
+    .card-body {
+        padding: 1.25rem !important;
+    }
+    .card-header {
+        padding: 1rem 1.25rem 1.5rem 1.25rem !important;
+    }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.25rem; }
 }
 
 /* Classification Items - Enhanced Visibility */
