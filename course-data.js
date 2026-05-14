@@ -16,29 +16,29 @@ const QuranCourseData = {
         },
         {
             id: 3,
-            title: "<span class='font-amiri fw-bold text-primary'>الْجَمْع</span> (Plurals)",
-            description: "Learn how to identify plurals in the Quran, from the regular 'Sound' endings to the unique 'Broken' patterns.",
-            url: "chapter3.html",
-            color: "success"
-        },
-        {
-            id: 4,
             title: "<span class='font-amiri fw-bold text-primary'>الضَّمِير</span> (Pronouns)",
             description: "These are essential pronouns attached to the end of words in the Quran which clarify ownership and objects. Master these 'connectors' using the simple HUNAKANEE rule.",
-            url: "chapter4.html",
+            url: "chapter3.html",
             color: "warning"
         },
         {
-            id: 5,
+            id: 4,
             title: "<span class='font-amiri fw-bold text-primary'>مَاضِي</span> (Past Verbs)",
             description: "Master the fundamental 'Subject' endings of the past tense that tell you exactly WHO did the action.",
+            url: "chapter4.html",
+            color: "success"
+        },
+        {
+            id: 5,
+            title: "<span class='font-amiri fw-bold text-primary'>مُضَارِع</span> (Present Verbs)",
+            description: "Master the 8 core forms of the present tense that tell you WHO is doing the action now or in the future.",
             url: "chapter5.html",
             color: "success"
         },
         {
             id: 6,
-            title: "<span class='font-amiri fw-bold text-primary'>مُضَارِع</span> (Present Verbs)",
-            description: "Master the 8 core forms of the present tense that tell you WHO is doing the action now or in the future.",
+            title: "<span class='font-amiri fw-bold text-primary'>الْجَمْع</span> (Plurals)",
+            description: "Learn how to identify plurals in the Quran, from the regular 'Sound' endings to the unique 'Broken' patterns.",
             url: "chapter6.html",
             color: "success"
         },
