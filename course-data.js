@@ -23,10 +23,10 @@ const QuranCourseData = {
         },
         {
             id: 4,
-            title: "<span class='font-amiri fw-bold text-rose'>الضَّمِير - مُؤَنَّث</span> (Feminine Pronouns)",
+            title: "<span class='font-amiri fw-bold text-primary'>الضَّمِير - مُؤَنَّث</span> (Feminine Pronouns)",
             description: "Master the feminine pronouns attached and detached, along with their verb tense endings.",
             url: "chapter4.html",
-            color: "rose"
+            color: "primary"
         },
         {
             id: 5,

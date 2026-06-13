@@ -241,42 +241,62 @@ body {
     opacity: 1;
 }
 
-/* Rose Color Palette for Feminine Chapters */
-.text-rose {
-    color: #b84a62 !important;
+
+
+/* Hand Gesture Containers */
+.gesture-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    padding: 6px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.02);
+    color: inherit;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s ease;
+    vertical-align: middle;
 }
 
-.text-rose-emphasis {
-    color: #8c2b3e !important;
+/* Card-context theme colors for gestures */
+.card.border-primary .gesture-container,
+.card.border-danger .gesture-container {
+    color: var(--bs-primary) !important;
 }
 
-.bg-rose {
-    background-color: #b84a62 !important;
+.gesture-container:hover {
+    transform: scale(1.15) rotate(-3deg);
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
-.bg-rose-subtle {
-    background-color: #fdf2f4 !important;
+.gesture-container svg,
+.gesture-container i {
+    width: 32px;
+    height: 32px;
+    font-size: 1.65rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
 }
 
-.border-rose {
-    border-color: #b84a62 !important;
+/* Hand Gesture Direction Rotations */
+.gesture-side {
+    /* Pointing to the side (3rd person) - Rotated to point leftwards */
+    transform: rotate(180deg);
 }
 
-.border-rose-subtle {
-    border-color: #f8b4c2 !important;
+.gesture-straight {
+    /* Pointing straight (2nd person) - Rotated to point upward */
+    transform: rotate(270deg);
 }
 
-.btn-outline-rose {
-    border-color: #b84a62 !important;
-    color: #b84a62 !important;
-    background-color: transparent !important;
+.gesture-oneself {
+    /* 1st person speaker icons - No rotation needed */
+    transform: none;
 }
 
-.btn-outline-rose:hover, .btn-outline-rose:focus, .btn-outline-rose:active {
-    background-color: #b84a62 !important;
-    border-color: #b84a62 !important;
-    color: #fff !important;
-}
+
 
 
 
