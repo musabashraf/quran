@@ -241,4 +241,42 @@ body {
     opacity: 1;
 }
 
+/* Rose Color Palette for Feminine Chapters */
+.text-rose {
+    color: #b84a62 !important;
+}
+
+.text-rose-emphasis {
+    color: #8c2b3e !important;
+}
+
+.bg-rose {
+    background-color: #b84a62 !important;
+}
+
+.bg-rose-subtle {
+    background-color: #fdf2f4 !important;
+}
+
+.border-rose {
+    border-color: #b84a62 !important;
+}
+
+.border-rose-subtle {
+    border-color: #f8b4c2 !important;
+}
+
+.btn-outline-rose {
+    border-color: #b84a62 !important;
+    color: #b84a62 !important;
+    background-color: transparent !important;
+}
+
+.btn-outline-rose:hover, .btn-outline-rose:focus, .btn-outline-rose:active {
+    background-color: #b84a62 !important;
+    border-color: #b84a62 !important;
+    color: #fff !important;
+}
+
+
 
