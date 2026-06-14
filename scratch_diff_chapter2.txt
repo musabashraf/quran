@@ -1,0 +1,466 @@
+﻿diff --git a/chapter2.html b/chapter2.html
+index abbbf9b..e8fa354 100644
+--- a/chapter2.html
++++ b/chapter2.html
+@@ -1,4 +1,4 @@
+-∩╗┐<!DOCTYPE html>
++<!DOCTYPE html>
+ <html lang="ar" dir="rtl">
+ <head>
+     <meta charset="UTF-8">
+@@ -62,47 +62,31 @@
+                     </div>
+                 </div>
+ 
+-                <div class="row g-4">
+-                    <!-- Table Section -->
+-                    <div class="col-xl-8 col-lg-7">
+-                        <div class="card shadow-sm rounded-4 overflow-hidden border-0 border-top border-primary border-4 mb-5">
+-                            <div class="card-header border-0 py-3 px-4" style="background-color: rgba(6, 95, 70, 0.1) !important;">
+-                                <h6 class="text-primary fw-bold text-uppercase ls-wide mb-0">Grammar Forms Summary</h6>
+-                            </div>
++                <!-- Table Section -->
++                <div class="card shadow-sm rounded-4 overflow-hidden border-0 border-top border-primary border-4 mb-5">
++
+                             <div class="table-responsive">
+-                                <table class="table table-hover bg-white mb-0" style="min-width: 480px; table-layout: fixed;">
+-                                    <thead>
+-                                        <tr class="align-middle text-center">
+-                                            <th class="border-0 border-bottom border-light-subtle py-2 text-center" style="width: 25%; background-color: rgba(6, 95, 70, 0.04);">
+-                                                <div class="font-amiri h4 fw-bold text-primary mb-2">╪º┘ä┘å┘Ä┘æ┘ê╪╣</div>
+-                                                <div class="small text-uppercase ls-wide text-muted fw-bold" style="font-size: 0.65rem;">Form</div>
+-                                            </th>
+-                                            <th class="border-0 border-bottom border-light-subtle py-2 text-center" style="width: 25%; background-color: rgba(6, 95, 70, 0.04);">
+-                                                <div class="font-amiri h4 fw-bold text-primary mb-2">╪º┘ä┘é┘Ä╪º╪╣┘É╪»┘Ä╪⌐</div>
+-                                                <div class="small text-uppercase ls-wide text-muted fw-bold" style="font-size: 0.65rem;">Pattern</div>
+-                                            </th>
+-                                            <th class="border-0 border-bottom border-light-subtle py-2 text-center" style="width: 25%; background-color: rgba(6, 95, 70, 0.04);">
+-                                                <div class="font-amiri h4 fw-bold text-primary mb-2">╪º┘ä┘Æ┘à┘É╪½┘Ä╪º┘ä</div>
+-                                                <div class="small text-uppercase ls-wide text-muted fw-bold" style="font-size: 0.65rem;">Example</div>
+-                                            </th>
+-                                            <th class="border-0 border-bottom border-light-subtle py-2 text-center" style="width: 25%; background-color: rgba(6, 95, 70, 0.04);">
+-                                                <div class="font-amiri h4 fw-bold text-primary mb-2">╪º┘ä┘Æ┘à┘Ä╪╣┘Æ┘å┘Ä┘ë</div>
+-                                                <div class="small text-uppercase ls-wide text-muted fw-bold" style="font-size: 0.65rem;">Explanation</div>
+-                                            </th>
+-                                        </tr>
+-                                    </thead>
++                                <table class="table table-hover bg-white mb-0" style="min-width: 680px; table-layout: fixed;">
++                                    <colgroup>
++                                        <col style="width: 20%;">
++                                        <col style="width: 20%;">
++                                        <col style="width: 20%;">
++                                        <col style="width: 20%;">
++                                        <col style="width: 20%;">
++                                    </colgroup>
+                                     <tbody>
++                                        <tr class="table-light"><td colspan="5" class="fs-5 fw-bold text-primary ps-4 py-3" style="background-color: rgba(6, 95, 70, 0.08) !important;">╪º┘ä┘Æ┘ü┘É╪╣┘Æ┘ä (Verb Forms)</td></tr>
+                                         <tr>
+                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
+-                                                <div class="d-inline-block">
++                                                <div class="bg-primary-subtle rounded-3 d-inline-flex flex-column align-items-center justify-content-center border border-primary-subtle" style="width: 130px; height: 80px;">
+                                                     <div class="font-amiri h4 text-primary mb-2" dir="rtl">┘ü┘É╪╣┘Æ┘ä ┘à┘Ä╪º╪╢┘É┘è</div>
+-                                                    <div class="small fw-medium text-dark">Past Verb</div>
++                                                    <div class="small fw-bold text-primary ls-wide" style="font-size: 0.8rem;">Past Verb</div>
+                                                 </div>
+                                             </td>
+                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
+-                                                <div class="bg-primary-subtle rounded-3 d-inline-flex flex-column align-items-center justify-content-center border border-primary-subtle" style="width: 100px; height: 80px;">
++                                                <div class="d-inline-block">
+                                                     <div class="font-amiri h4 text-primary mb-2" dir="rtl">┘ü┘Ä╪╣┘Ä┘ä┘Ä</div>
+-                                                    <div class="small fw-bold text-primary ls-wide" style="font-size: 0.8rem;">He did</div>
++                                                    <div class="small fw-medium text-dark">He did</div>
+                                                 </div>
+                                             </td>
+                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
+@@ -111,21 +95,27 @@
+                                                     <div class="small fw-medium text-dark">"He wrote"</div>
+                                                 </div>
+                                             </td>
+-                                            <td class="align-middle text-center border-bottom border-light-subtle" style="max-width: 250px;">
+-                                                <p class="text-dark mb-0 small">Action already completed.</p>
++                                            <td class="align-middle text-center py-3 border-bottom border-light-subtle">
++                                                <div class="d-inline-block">
++                                                    <div class="font-amiri h4 text-primary mb-2" dir="rtl">╪¼┘Ä┘ä┘Ä╪│┘Ä</div>
++                                                    <div class="small fw-medium text-dark">"He sat"</div>
++                                                </div>
++                                            </td>
++                                            <td class="align-middle text-center py-3 border-bottom border-light-subtle">
++                                                <span class="badge bg-success-subtle text-success px-3 py-2 rounded-pill fw-semibold" style="font-size: 0.8rem;">Has Pattern</span>
+                                             </td>
+                                         </tr>
+                                         <tr>
+                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
+-                                                <div class="d-inline-block">
++                                                <div class="bg-primary-subtle rounded-3 d-inline-flex flex-column align-items-center justify-content-center border border-primary-subtle" style="width: 130px; height: 80px;">
+                                                     <div class="font-amiri h4 text-primary mb-2" dir="rtl">┘ü┘É╪╣┘Æ┘ä ┘à┘Å╪╢┘Ä╪º╪▒┘É╪╣</div>
+-                                                    <div class="small fw-medium text-dark">Present Verb</div>
++                                                    <div class="small fw-bold text-primary ls-wide" style="font-size: 0.8rem;">Present Verb</div>
+                                                 </div>
+                                             </td>
+                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
+-                                                <div class="bg-primary-subtle rounded-3 d-inline-flex flex-column align-items-center justify-content-center border border-primary-subtle" style="width: 100px; height: 80px;">
++                                                <div class="d-inline-block">
+                                                     <div class="font-amiri h4 text-primary mb-2" dir="rtl">┘è┘Ä┘ü┘Æ╪╣┘Ä┘ä┘Å</div>
+-                                                    <div class="small fw-bold text-primary ls-wide" style="font-size: 0.8rem;">He does</div>
++                                                    <div class="small fw-medium text-dark">He does</div>
+                                                 </div>
+                                             </td>
+                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
+@@ -134,21 +124,27 @@
+                                                     <div class="small fw-medium text-dark">"He writes"</div>
+                                                 </div>
+                                             </td>
+-                                            <td class="align-middle text-center border-bottom border-light-subtle" style="max-width: 250px;">
+-                                                <p class="text-dark mb-0 small">Action happening or future.</p>
++                                            <td class="align-middle text-center py-3 border-bottom border-light-subtle">
++                                                <div class="d-inline-block">
++                                                    <div class="font-amiri h4 text-primary mb-2" dir="rtl">┘è┘Ä╪¼┘Æ┘ä┘É╪│┘Å</div>
++                                                    <div class="small fw-medium text-dark">"He sits"</div>
++                                                </div>
++                                            </td>
++                                            <td class="align-middle text-center py-3 border-bottom border-light-subtle">
++                                                <span class="badge bg-success-subtle text-success px-3 py-2 rounded-pill fw-semibold" style="font-size: 0.8rem;">Has Pattern</span>
+                                             </td>
+                                         </tr>
+                                         <tr>
+                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
+-                                                <div class="d-inline-block">
++                                                <div class="bg-primary-subtle rounded-3 d-inline-flex flex-column align-items-center justify-content-center border border-primary-subtle" style="width: 130px; height: 80px;">
+                                                     <div class="font-amiri h4 text-primary mb-2" dir="rtl">┘ü┘É╪╣┘Æ┘ä ╪ú┘Ä┘à┘Æ╪▒</div>
+-                                                    <div class="small fw-medium text-dark">Command</div>
++                                                    <div class="small fw-bold text-primary ls-wide" style="font-size: 0.8rem;">Command</div>
+                                                 </div>
+                                             </td>
+                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
+-                                                <div class="bg-primary-subtle rounded-3 d-inline-flex flex-column align-items-center justify-content-center border border-primary-subtle" style="width: 100px; height: 80px;">
++                                                <div class="d-inline-block">
+                                                     <div class="font-amiri h4 text-primary mb-2" dir="rtl">╪º┘É┘ü┘Æ╪╣┘Ä┘ä┘Æ</div>
+-                                                    <div class="small fw-bold text-primary ls-wide" style="font-size: 0.8rem;">Do!</div>
++                                                    <div class="small fw-medium text-dark">Do!</div>
+                                                 </div>
+                                             </td>
+                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
+@@ -157,21 +153,28 @@
+                                                     <div class="small fw-medium text-dark">"Write!"</div>
+                                                 </div>
+                                             </td>
+-                                            <td class="align-middle text-center border-bottom border-light-subtle" style="max-width: 250px;">
+-                                                <p class="text-dark mb-0 small">Direct order or request.</p>
++                                            <td class="align-middle text-center py-3 border-bottom border-light-subtle">
++                                                <div class="d-inline-block">
++                                                    <div class="font-amiri h4 text-primary mb-2" dir="rtl">╪º┘É╪¼┘Æ┘ä┘É╪│┘Æ</div>
++                                                    <div class="small fw-medium text-dark">"Sit!"</div>
++                                                </div>
++                                            </td>
++                                            <td class="align-middle text-center py-3 border-bottom border-light-subtle">
++                                                <span class="badge bg-success-subtle text-success px-3 py-2 rounded-pill fw-semibold" style="font-size: 0.8rem;">Has Pattern</span>
+                                             </td>
+                                         </tr>
++                                        <tr class="table-light"><td colspan="5" class="fs-5 fw-bold text-primary ps-4 py-3" style="background-color: rgba(6, 95, 70, 0.08) !important;">╪º┘ä┘É╪º╪│┘Æ┘à (Noun Forms)</td></tr>
+                                         <tr>
+                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
+-                                                <div class="d-inline-block">
++                                                <div class="bg-primary-subtle rounded-3 d-inline-flex flex-column align-items-center justify-content-center border border-primary-subtle" style="width: 130px; height: 80px;">
+                                                     <div class="font-amiri h4 text-primary mb-2" dir="rtl">╪º┘É╪│┘Æ┘à ┘ü┘Ä╪º╪╣┘É┘ä</div>
+-                                                    <div class="small fw-medium text-dark">Doer</div>
++                                                    <div class="small fw-bold text-primary ls-wide" style="font-size: 0.8rem;">Doer</div>
+                                                 </div>
+                                             </td>
+                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
+-                                                <div class="bg-primary-subtle rounded-3 d-inline-flex flex-column align-items-center justify-content-center border border-primary-subtle" style="width: 100px; height: 80px;">
++                                                <div class="d-inline-block">
+                                                     <div class="font-amiri h4 text-primary mb-2" dir="rtl">┘ü┘Ä╪º╪╣┘É┘ä</div>
+-                                                    <div class="small fw-bold text-primary ls-wide" style="font-size: 0.8rem;">Doer</div>
++                                                    <div class="small fw-medium text-dark">Doer</div>
+                                                 </div>
+                                             </td>
+                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
+@@ -180,21 +183,27 @@
+                                                     <div class="small fw-medium text-dark">"Writer"</div>
+                                                 </div>
+                                             </td>
+-                                            <td class="align-middle text-center border-bottom border-light-subtle" style="max-width: 250px;">
+-                                                <p class="text-dark mb-0 small">The one doing the action.</p>
++                                            <td class="align-middle text-center py-3 border-bottom border-light-subtle">
++                                                <div class="d-inline-block">
++                                                    <div class="font-amiri h4 text-primary mb-2" dir="rtl">╪¼┘Ä╪º┘ä┘É╪│</div>
++                                                    <div class="small fw-medium text-dark">"Sitter"</div>
++                                                </div>
++                                            </td>
++                                            <td class="align-middle text-center py-3 border-bottom border-light-subtle">
++                                                <span class="badge bg-success-subtle text-success px-3 py-2 rounded-pill fw-semibold" style="font-size: 0.8rem;">Has Pattern</span>
+                                             </td>
+                                         </tr>
+                                         <tr>
+                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
+-                                                <div class="d-inline-block">
++                                                <div class="bg-primary-subtle rounded-3 d-inline-flex flex-column align-items-center justify-content-center border border-primary-subtle" style="width: 130px; height: 80px;">
+                                                     <div class="font-amiri h4 text-primary mb-2" dir="rtl">╪º┘É╪│┘Æ┘à ┘à┘Ä┘ü┘Æ╪╣┘Å┘ê┘ä</div>
+-                                                    <div class="small fw-medium text-dark">Receiver</div>
++                                                    <div class="small fw-bold text-primary ls-wide" style="font-size: 0.8rem;">Receiver</div>
+                                                 </div>
+                                             </td>
+                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
+-                                                <div class="bg-primary-subtle rounded-3 d-inline-flex flex-column align-items-center justify-content-center border border-primary-subtle" style="width: 100px; height: 80px;">
++                                                <div class="d-inline-block">
+                                                     <div class="font-amiri h4 text-primary mb-2" dir="rtl">┘à┘Ä┘ü┘Æ╪╣┘Å┘ê┘ä</div>
+-                                                    <div class="small fw-bold text-primary ls-wide" style="font-size: 0.8rem;">Receiver</div>
++                                                    <div class="small fw-medium text-dark">Receiver</div>
+                                                 </div>
+                                             </td>
+                                             <td class="align-middle text-center py-4 border-bottom border-light-subtle">
+@@ -203,21 +212,27 @@
+                                                     <div class="small fw-medium text-dark">"Written"</div>
+                                                 </div>
+                                             </td>
+-                                            <td class="align-middle text-center border-bottom border-light-subtle" style="max-width: 250px;">
+-                                                <p class="text-dark mb-0 small">The one receiving the action.</p>
++                                            <td class="align-middle text-center py-4 border-bottom border-light-subtle">
++                                                <div class="d-inline-block">
++                                                    <div class="font-amiri h4 text-primary mb-2" dir="rtl">┘à┘Ä╪¼┘Æ┘ä┘Å┘ê╪│</div>
++                                                    <div class="small fw-medium text-dark">"Sat"</div>
++                                                </div>
++                                            </td>
++                                            <td class="align-middle text-center py-3 border-bottom border-light-subtle">
++                                                <span class="badge bg-success-subtle text-success px-3 py-2 rounded-pill fw-semibold" style="font-size: 0.8rem;">Has Pattern</span>
+                                             </td>
+                                         </tr>
+                                         <tr class="masdar-row" style="background-color: rgba(212, 175, 55, 0.12) !important;">
+                                             <td class="align-middle text-center py-3 border-0" style="background-color: inherit;">
+-                                                <div class="d-inline-block">
++                                                <div class="bg-primary-subtle rounded-3 d-inline-flex flex-column align-items-center justify-content-center border border-primary-subtle" style="width: 130px; height: 80px;">
+                                                     <div class="font-amiri h4 text-primary mb-2" dir="rtl">╪º┘É╪│┘Æ┘à ┘à┘Ä╪╡┘Æ╪»┘Ä╪▒</div>
+-                                                    <div class="small fw-medium text-dark">Masdar</div>
++                                                    <div class="small fw-bold text-primary ls-wide" style="font-size: 0.8rem;">Masdar</div>
+                                                 </div>
+                                             </td>
+                                             <td class="align-middle text-center py-3 border-0" style="background-color: inherit;">
+-                                                <div class="bg-primary-subtle rounded-3 d-inline-flex flex-column align-items-center justify-content-center border border-primary-subtle" style="width: 100px; height: 80px;">
++                                                <div class="d-inline-block">
+                                                     <div class="font-amiri h4 text-primary mb-2" dir="rtl">┘ü┘Ä╪╣┘Æ┘ä</div>
+-                                                    <div class="small fw-bold text-primary ls-wide" style="font-size: 0.8rem;">Idea</div>
++                                                    <div class="small fw-medium text-dark">Idea</div>
+                                                 </div>
+                                             </td>
+                                             <td class="align-middle text-center py-4 border-0" style="background-color: inherit;">
+@@ -226,109 +241,119 @@
+                                                     <div class="small fw-medium text-dark">"Writing"</div>
+                                                 </div>
+                                             </td>
+-                                            <td class="align-middle text-center border-0" style="background-color: inherit; max-width: 250px;">
+-                                                <p class="text-dark mb-0 small">The concept or name of the action.</p>
++                                            <td class="align-middle text-center py-4 border-0" style="background-color: inherit;">
++                                                <div class="d-inline-block">
++                                                    <div class="font-amiri h4 text-primary mb-2" dir="rtl">╪¼┘Å┘ä┘Å┘ê╪│</div>
++                                                    <div class="small fw-medium text-dark">"Sitting"</div>
++                                                </div>
++                                            </td>
++                                            <td class="align-middle text-center py-3 border-0" style="background-color: inherit;">
++                                                <span class="badge bg-danger-subtle text-danger px-3 py-2 rounded-pill fw-semibold" style="font-size: 0.8rem;">No Pattern</span>
+                                             </td>
+                                         </tr>
+                                     </tbody>
+                                 </table>
+                             </div>
+                         </div>
+-                    </div>
+ 
+-                    <!-- Side Cards -->
+-                    <div class="col-xl-4 col-lg-5">
+-                        <div class="card shadow-sm rounded-4 overflow-hidden border-0 border-top border-warning border-4 mb-4 bg-white">
+-                            <div class="card-header border-0 py-3 px-4" style="background-color: rgba(6, 95, 70, 0.1) !important;">
+-                                <h6 class="text-warning fw-bold text-uppercase ls-wide mb-0 small d-flex align-items-center gap-2">
+-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shield-lock-fill" viewBox="0 0 16 16">
+-                                        <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.8 11.8 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7 7 0 0 0 1.048-.625 11.8 11.8 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.54 1.54 0 0 0-1.044-1.263 63 63 0 0 0-2.887-.87C9.843.266 8.69 0 8 0m0 5a1.5 1.5 0 0 1 .5 2.915V10a.5.5 0 0 1-1 0V7.915A1.5 1.5 0 0 1 8 5"/>
+-                                    </svg>
+-                                    The Action Secret
+-                                </h6>
+-                            </div>
++                        <!-- Action Secret Card (Moved to bottom) -->
++                        <div class="card shadow-sm rounded-4 overflow-hidden border-0 border-top border-warning border-4 mb-5 bg-white" dir="rtl">
++
+                             <div class="card-body p-4">
+-                                <div class="mb-4 p-3 bg-warning-subtle rounded-3 border border-warning-subtle">
++                                <div class="mb-4 p-3 bg-warning-subtle rounded-3 border border-warning-subtle" dir="ltr">
+                                     <p class="small mb-0 text-dark"><strong>Self-Actions (┘ü┘É╪╣┘Æ┘ä ┘ä┘Ä╪º╪▓┘É┘à)</strong> don't have an <strong>Ism Mafool</strong> because the action stays with the doer and doesn't pass to a receiver!</p>
+                                 </div>
+                                 
+-                                <div class="mb-4">
+-                                    <h6 class="fw-bold text-primary mb-2">1. Self-Actions <span class="font-amiri ms-1 fw-bold">(┘ü┘É╪╣┘Æ┘ä ┘ä┘Ä╪º╪▓┘É┘à)</span></h6>
+-                                    <p class="small text-muted mb-1 opacity-75">Intransitive</p>
+-                                    <p class="small text-dark mb-2">Actions that stay with the doer. They don't pass to anyone else.</p>
+-                                    <div class="bg-light p-3 rounded small border-start border-primary border-3">
+-                                        <div class="row g-3 text-center">
+-                                            <div class="col-4">
+-                                                <div class="font-amiri h5 fw-bold text-primary mb-0">╪¿┘Ä╪╣┘Å╪»┘Ä</div>
+-                                                <div class="small text-muted" style="font-size: 0.65rem;">He was far</div>
+-                                            </div>
+-                                            <div class="col-4">
+-                                                <div class="font-amiri h5 fw-bold text-primary mb-0">╪░┘Ä┘ç┘Ä╪¿┘Ä</div>
+-                                                <div class="small text-muted" style="font-size: 0.65rem;">He went</div>
++                                <div class="row g-4">
++                                    <!-- Self-Actions -->
++                                    <div class="col-md-6">
++                                        <div class="bg-light rounded overflow-hidden border-start border-primary border-3 h-100">
++                                            <div class="px-3 py-3 mb-3" style="background-color: rgba(6, 95, 70, 0.08) !important;">
++                                                <h5 class="fw-bold text-primary mb-0"><span class="font-amiri fw-bold fs-4">┘ü┘É╪╣┘Æ┘ä ┘ä┘Ä╪º╪▓┘É┘à</span> <span dir="ltr" class="fs-6 fw-normal text-muted ms-1">(Self-Actions)</span></h5>
+                                             </div>
+-                                            <div class="col-4">
+-                                                <div class="font-amiri h5 fw-bold text-primary mb-0">┘à┘Ä╪▒┘É╪╢┘Ä</div>
+-                                                <div class="small text-muted" style="font-size: 0.65rem;">He was sick</div>
+-                                            </div>
+-                                            <div class="col-4">
+-                                                <div class="font-amiri h5 fw-bold text-primary mb-0">┘â┘Ä╪¿┘Å╪▒┘Ä</div>
+-                                                <div class="small text-muted" style="font-size: 0.65rem;">He grew big</div>
+-                                            </div>
+-                                            <div class="col-4">
+-                                                <div class="font-amiri h5 fw-bold text-primary mb-0">╪╡┘Ä╪║┘Å╪▒┘Ä</div>
+-                                                <div class="small text-muted" style="font-size: 0.65rem;">He grew small</div>
+-                                            </div>
+-                                            <div class="col-4">
+-                                                <div class="font-amiri h5 fw-bold text-primary mb-0">┘é┘Ä╪▒┘Å╪¿┘Ä</div>
+-                                                <div class="small text-muted" style="font-size: 0.65rem;">He was near</div>
++                                            <div class="px-3 pb-3">
++                                                <p class="small text-muted mb-1 opacity-75" dir="ltr">Intransitive</p>
++                                                <p class="small text-dark mb-3" dir="ltr">Actions that stay with the doer. They don't pass to anyone else.</p>
++                                                <div class="row g-3 text-center">
++                                                    <div class="col-4">
++                                                        <div class="font-amiri h5 fw-bold text-primary mb-0">╪¿┘Ä╪╣┘Å╪»┘Ä</div>
++                                                        <div class="small text-muted" style="font-size: 0.65rem;">He was far</div>
++                                                    </div>
++                                                    <div class="col-4">
++                                                        <div class="font-amiri h5 fw-bold text-primary mb-0">╪░┘Ä┘ç┘Ä╪¿┘Ä</div>
++                                                        <div class="small text-muted" style="font-size: 0.65rem;">He went</div>
++                                                    </div>
++                                                    <div class="col-4">
++                                                        <div class="font-amiri h5 fw-bold text-primary mb-0">┘à┘Ä╪▒┘É╪╢┘Ä</div>
++                                                        <div class="small text-muted" style="font-size: 0.65rem;">He was sick</div>
++                                                    </div>
++                                                    <div class="col-4">
++                                                        <div class="font-amiri h5 fw-bold text-primary mb-0">┘â┘Ä╪¿┘Å╪▒┘Ä</div>
++                                                        <div class="small text-muted" style="font-size: 0.65rem;">He grew big</div>
++                                                    </div>
++                                                    <div class="col-4">
++                                                        <div class="font-amiri h5 fw-bold text-primary mb-0">╪╡┘Ä╪║┘Å╪▒┘Ä</div>
++                                                        <div class="small text-muted" style="font-size: 0.65rem;">He grew small</div>
++                                                    </div>
++                                                    <div class="col-4">
++                                                        <div class="font-amiri h5 fw-bold text-primary mb-0">┘é┘Ä╪▒┘Å╪¿┘Ä</div>
++                                                        <div class="small text-muted" style="font-size: 0.65rem;">He was near</div>
++                                                    </div>
++                                                </div>
+                                             </div>
+                                         </div>
+                                     </div>
+-                                </div>
+-
+-                                <div>
+-                                    <h6 class="fw-bold text-primary mb-2">2. Object-Actions <span class="font-amiri ms-1 fw-bold">(┘ü┘É╪╣┘Æ┘ä ┘à┘Å╪¬┘Ä╪╣┘Ä╪»┘æ┘É┘è)</span></h6>
+-                                    <p class="small text-muted mb-1 opacity-75">Transitive</p>
+-                                    <p class="small text-dark mb-2">Actions that need a receiver to be complete.</p>
+-                                    <div class="bg-light p-3 rounded small border-start border-primary border-3">
+-                                        <div class="row g-3 text-center">
+-                                            <div class="col-4">
+-                                                <div class="font-amiri h5 fw-bold text-primary mb-0">┘â┘Ä╪¬┘Ä╪¿┘Ä</div>
+-                                                <div class="small text-muted" style="font-size: 0.65rem;">He wrote</div>
+-                                            </div>
+-                                            <div class="col-4">
+-                                                <div class="font-amiri h5 fw-bold text-primary mb-0">╪«┘Ä┘ä┘Ä┘é┘Ä</div>
+-                                                <div class="small text-muted" style="font-size: 0.65rem;">He created</div>
+-                                            </div>
+-                                            <div class="col-4">
+-                                                <div class="font-amiri h5 fw-bold text-primary mb-0">┘å┘Ä╪╡┘Ä╪▒┘Ä</div>
+-                                                <div class="small text-muted" style="font-size: 0.65rem;">He helped</div>
+-                                            </div>
+-                                            <div class="col-4">
+-                                                <div class="font-amiri h5 fw-bold text-primary mb-0">┘é┘Ä╪▒┘Ä╪ú┘Ä</div>
+-                                                <div class="small text-muted" style="font-size: 0.65rem;">He read</div>
++                                    
++                                    <!-- Object-Actions -->
++                                    <div class="col-md-6">
++                                        <div class="bg-light rounded overflow-hidden border-start border-primary border-3 h-100">
++                                            <div class="px-3 py-3 mb-3" style="background-color: rgba(6, 95, 70, 0.08) !important;">
++                                                <h5 class="fw-bold text-primary mb-0"><span class="font-amiri fw-bold fs-4">┘ü┘É╪╣┘Æ┘ä ┘à┘Å╪¬┘Ä╪╣┘Ä╪»┘æ┘É┘è</span> <span dir="ltr" class="fs-6 fw-normal text-muted ms-1">(Object-Actions)</span></h5>
+                                             </div>
+-                                            <div class="col-4">
+-                                                <div class="font-amiri h5 fw-bold text-primary mb-0">╪ú┘Ä┘â┘Ä┘ä┘Ä</div>
+-                                                <div class="small text-muted" style="font-size: 0.65rem;">He ate</div>
+-                                            </div>
+-                                            <div class="col-4">
+-                                                <div class="font-amiri h5 fw-bold text-primary mb-0">╪┤┘Ä╪▒┘É╪¿┘Ä</div>
+-                                                <div class="small text-muted" style="font-size: 0.65rem;">He drank</div>
++                                            <div class="px-3 pb-3">
++                                                <p class="small text-muted mb-1 opacity-75" dir="ltr">Transitive</p>
++                                                <p class="small text-dark mb-3" dir="ltr">Actions that need a receiver to be complete.</p>
++                                                <div class="row g-3 text-center">
++                                                    <div class="col-4">
++                                                        <div class="font-amiri h5 fw-bold text-primary mb-0">┘â┘Ä╪¬┘Ä╪¿┘Ä</div>
++                                                        <div class="small text-muted" style="font-size: 0.65rem;">He wrote</div>
++                                                    </div>
++                                                    <div class="col-4">
++                                                        <div class="font-amiri h5 fw-bold text-primary mb-0">╪«┘Ä┘ä┘Ä┘é┘Ä</div>
++                                                        <div class="small text-muted" style="font-size: 0.65rem;">He created</div>
++                                                    </div>
++                                                    <div class="col-4">
++                                                        <div class="font-amiri h5 fw-bold text-primary mb-0">┘å┘Ä╪╡┘Ä╪▒┘Ä</div>
++                                                        <div class="small text-muted" style="font-size: 0.65rem;">He helped</div>
++                                                    </div>
++                                                    <div class="col-4">
++                                                        <div class="font-amiri h5 fw-bold text-primary mb-0">┘é┘Ä╪▒┘Ä╪ú┘Ä</div>
++                                                        <div class="small text-muted" style="font-size: 0.65rem;">He read</div>
++                                                    </div>
++                                                    <div class="col-4">
++                                                        <div class="font-amiri h5 fw-bold text-primary mb-0">╪ú┘Ä┘â┘Ä┘ä┘Ä</div>
++                                                        <div class="small text-muted" style="font-size: 0.65rem;">He ate</div>
++                                                    </div>
++                                                    <div class="col-4">
++                                                        <div class="font-amiri h5 fw-bold text-primary mb-0">╪┤┘Ä╪▒┘É╪¿┘Ä</div>
++                                                        <div class="small text-muted" style="font-size: 0.65rem;">He drank</div>
++                                                    </div>
++                                                </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+-                    </div>
+-                </div>
+ 
+                 <!-- Quranic Examples Section -->
+                 <div class="mb-5">
+                     <h3 class="fw-bold text-dark mb-4">Quranic Examples</h3>
+-                    <div class="row g-4 justify-content-center">
+-                        <div class="col-md-6 col-lg-4">
++                    <!-- Verb Forms Section -->
++                    <div class="mb-5">
++                        <h5 class="fw-bold text-primary mb-3">Verb Forms (╪º┘ä┘Æ┘ü┘É╪╣┘Æ┘ä)</h5>
++                        <div class="row g-4 justify-content-center">
++                            <div class="col-md-6 col-lg-4">
+                             <div class="card shadow-sm rounded-4 overflow-hidden border-0 border-top border-primary border-4 h-100">
+                                 <div class="card-header border-0">
+                                     <div class="d-flex justify-content-center align-items-center gap-4">
+@@ -436,8 +461,13 @@
+                                 </div>
+                             </div>
+                         </div>
+-
+-                        <div class="col-md-6 col-lg-4">
++                    </div>
++                    
++                    <!-- Noun Forms Section -->
++                    <div>
++                        <h5 class="fw-bold text-primary mb-3">Noun Forms (╪º┘ä┘É╪º╪│┘Æ┘à)</h5>
++                        <div class="row g-4 justify-content-center">
++                            <div class="col-md-6 col-lg-4">
+                             <div class="card shadow-sm rounded-4 overflow-hidden border-0 border-top border-primary border-4 h-100">
+                                 <div class="card-header border-0">
+                                     <div class="d-flex justify-content-center align-items-center gap-4">
+@@ -551,6 +581,7 @@
+                         </div>
+                     </div>
+                 </div>
++                </div>
+ 
+ 
+                 <div class="d-flex justify-content-between gap-2 pt-4">
