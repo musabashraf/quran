@@ -22,6 +22,6 @@ The chapters below match the current course outline; more may be added over time
 
 6. **Prepositions (حُرُوف الْجَرّ)** – **Huroof al-jarr** (e.g. في، بِ، مِنْ): “power particles” that connect meanings and pull the following word toward a **kasra** (the “gravity” idea).
 
-7. **Verb forms (أَوْزَان)** – How roots shift into different pattern families; focus on the **five most common** families that cover most Quranic verbs.
+7. **Verb forms (أَوْزَان)** – How roots shift into different pattern families; covers all **ten standard verb forms** (1 to 10) in Arabic grammar.
 
 8. **Three states (مَرْفُوع · مَنْصُوب · مَجْرُور)** – Listen to the **last syllable**: **مَرْفُوع** is often an **u** sound (**ضَمَّة**; pause may show **و** where tanwīn ḍamma sat on **ا**); **مَنْصُوب** is often **a** (**فَتْحَة**; pause may show **ىٰ**-style spelling after tanwīn fatḥa); **مَجْرُور** is often **i** (**كَسْرَة**), deepened after **حُرُوف الْجَرّ** in Chapter 6.

@@ -45,7 +45,7 @@ const QuranCourseData = {
         {
             id: 7,
             title: "<span class='font-amiri fw-bold text-primary'>أَوْزَان</span> (Verb Forms)",
-            description: "See how roots upgrade their meaning across the 5 most common verb families in the Quran.",
+            description: "See how roots upgrade their meaning across all 10 standard verb forms (1 to 10) in the Quran.",
             url: "chapter7.html",
             color: "primary"
         },
