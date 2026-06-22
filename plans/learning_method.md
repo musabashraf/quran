@@ -92,7 +92,7 @@ Repeat the routine above for the following 5 sound verbs:
 
 ---
 
-## 📖 Chapter 4: Feminine Pronouns (الضَّمِير - مُؤَنَّث)
+## 📖 Chapter 4: Verbs - Feminine (الْأَفْعَال - مُؤَنَّث)
 
 ### 🔄 Practice Routine
 1. **Verbs & Action (10x):** Repeat the past and present feminine verbs together of **فَعَلَ** (*fa'ala*) for all 6 feminine pronouns 10 times with actions and memorize.

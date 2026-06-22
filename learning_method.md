@@ -21,8 +21,16 @@ This is a guide for instructors or self-learners. The following learning method 
 > Include cartoons/illustrations of the hand actions for all 8 pronouns in the teaching materials.
 
 ---
-
 ## 📖 Chapter 3: Pronouns (الضَّمِير)
+
+### 🔄 Practice Routine
+1. **Detached Pronouns & Gestures (10x):** Repeat the 8 detached pronouns (**هُوَ**, **هُمَا**, **هُمْ**, **أَنْتَ**, **أَنْتُمَا**, **أَنْتُمْ**, **أَنَا**, **نَحْنُ**) with their physical pointing actions 10 times.
+2. **Attached Pronouns with Nouns (10x):** Practice attaching the pronouns to a noun (e.g., **كِتَاب** or **بَيْت**) and repeat the combinations (**كِتَابُهُ**, **كِتَابُهُمَا**, etc.) with pointing actions 10 times.
+3. **Arabic + Meaning (5x):** Repeat the pronouns/attached nouns with their English meanings and actions 5 times.
+
+---
+
+## 📖 Chapter 4: Verbs - Masculine (فِعْل - مُذَكَّر)
 
 ### 🔄 Practice Routine
 1. **Verbs & Action (10x):** Repeat the past and present verbs together of **فَعَلَ** (*fa'ala*) for all 8 pronouns 10 times with actions and memorize.
@@ -92,7 +100,7 @@ Repeat the routine above for the following 5 sound verbs:
 
 ---
 
-## 📖 Chapter 4: Feminine Pronouns (الضَّمِير - مُؤَنَّث)
+## 📖 Chapter 5: Verbs - Feminine (فِعْل - مُؤَنَّث)
 
 ### 🔄 Practice Routine
 1. **Verbs & Action (10x):** Repeat the past and present feminine verbs together of **فَعَلَ** (*fa'ala*) for all 6 feminine pronouns 10 times with actions and memorize.
@@ -151,3 +159,32 @@ Repeat the routine above for the following 5 sound verbs in feminine forms:
 | **أَنْتِ** | مضارع | تَكْتُبِينَ | تَجْلِسِينَ | تَضْرِبِينَ | تَشْرَبِينَ | تَدْرُسِينَ |
 | **أَنْتُمَا** | مضارع | تَكْتُبَانِ | تَجْلِسَانِ | تَضْرِبَانِ | تَشْرَبَانِ | تَدْرُسَانِ |
 | **أَنْتُنَّ** | مضارع | تَكْتُبْنَ | تَجْلِسْنَ | تَضْرِبْنَ | تَشْرَبْنَ | تَدْرُسْنَ |
+* | She drank / drinks |
+| **دَرَسَتْ / تَدْرُسُ** | *darasat / tadrusu* | She studied / studies |
+
+
+**For each verb, follow this sequence:**
+1. **10x** with hand action.
+2. **5x** with hand action and uttering the meaning.
+3. **10x** with hand action and thinking the meaning (silent).
+
+### 📝 Conjugation Table for the 5 Practice Verbs (Arabic Only - Feminine)
+
+| الضمير | النوع | كَتَبَتْ / تَكْتُبُ | جَلَسَتْ / تَجْلِسُ | ضَرَبَتْ / تَضْرِبُ | شَرِبَتْ / تَشْرَبُ | دَرَسَتْ / تَدْرُسُ |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **هِيَ** | ماضٍ | كَتَبَتْ | جَلَسَتْ | ضَرَبَتْ | شَرِبَتْ | دَرَسَتْ |
+| **هُمَا** | ماضٍ | كَتَبَتَا | جَلَسَتَا | ضَرَبَتَا | شَرِبَتَا | دَرَسَتَا |
+| **هُنَّ** | ماضٍ | كَتَبْنَ | جَلَسْنَ | ضَرَبْنَ | شَرِبْنَ | دَرَسْنَ |
+| **أَنْتِ** | ماضٍ | كَتَبْتِ | جَلَسْتِ | ضَرَبْتِ | شَرِبْتِ | دَرَسْتِ |
+| **أَنْتُمَا** | ماضٍ | كَتَبْتُمَا | جَلَسْتُمَا | ضَرَبْتُمَا | شَرِبْتُمَا | دَرَسْتُمَا |
+| **أَنْتُنَّ** | ماضٍ | كَتَبْتُنَّ | جَلَسْتُنَّ | ضَرَبْتُنَّ | شَرِبْتُنَّ | دَرَسْتُنَّ |
+| **هِيَ** | مضارع | تَكْتُبُ | تَجْلِسُ | تَضْرِبُ | تَشْرَبُ | تَدْرُسُ |
+| **هُمَا** | مضارع | تَكْتُبَانِ | تَجْلِسَانِ | تَضْرِبَانِ | تَشْرَبَانِ | تَدْرُسَانِ |
+| **هُنَّ** | مضارع | يَكْتُبْنَ | يَجْلِسْنَ | يَضْرِبْنَ | يَشْرَبْنَ | يَدْرُسْنَ |
+| **أَنْتِ** | مضارع | تَكْتُبِينَ | تَجْلِسِينَ | تَضْرِبِينَ | تَشْرَبِينَ | تَدْرُسِينَ |
+| **أَنْتُمَا** | مضارع | تَكْتُبَانِ | تَجْلِسَانِ | تَضْرِبَانِ | تَشْرَبَانِ | تَدْرُسَانِ |
+| **أَنْتُنَّ** | مضارع | تَكْتُبْنَ | تَجْلِسْنَ | تَضْرِبْنَ | تَشْرَبْنَ | تَدْرُسْنَ |
+
+
+
+

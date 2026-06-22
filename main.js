@@ -17,7 +17,21 @@ function loadSidebar() {
     // Build links
     let linksHtml = `<a href="index.html" class="nav-link">Introduction</a>`;
     QuranCourseData.chapters.forEach(ch => {
-        linksHtml += `<a href="${ch.url}" class="nav-link">${ch.id}. ${ch.title}</a>`;
+        const match = ch.title.match(/(<span.*?>.*?<\/span>)\s*(.*)/);
+        if (match) {
+            const arabicSpan = match[1];
+            const englishPart = match[2];
+            linksHtml += `
+                <a href="${ch.url}" class="nav-link d-flex flex-column align-items-start">
+                    <div class="d-flex align-items-center gap-1 w-100">
+                        <span class="fw-bold">${ch.id}.</span>
+                        <span>${arabicSpan}</span>
+                    </div>
+                    <span class="small text-muted ps-3" style="font-size: 0.85rem; font-weight: normal;">${englishPart}</span>
+                </a>`;
+        } else {
+            linksHtml += `<a href="${ch.url}" class="nav-link">${ch.id}. ${ch.title}</a>`;
+        }
     });
 
     // Master Sidebar Template
