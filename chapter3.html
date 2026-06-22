@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Scheherazade+New:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script src="course-data.js"></script>
     <script src="main.js" defer></script>
 </head>
@@ -69,29 +70,39 @@
                                 <table class="table table-hover bg-white mb-0" style="table-layout: fixed; min-width: 480px;">
                                     <thead>
                                         <tr class="align-middle text-center">
-                                            <th class="border-0 border-bottom border-light-subtle py-2 text-center" style="width: 22%; background-color: rgba(6, 95, 70, 0.04);">
+                                            <th class="border-0 border-bottom border-light-subtle py-2 text-center" style="width: 18%; background-color: rgba(6, 95, 70, 0.04);">
                                                 <div class="font-amiri h4 fw-bold text-primary mb-2">الضَّمِير</div>
                                                 <div class="small text-uppercase ls-wide text-muted fw-bold" style="font-size: 0.65rem;">Pronoun</div>
                                             </th>
-                                            <th class="border-0 border-bottom border-light-subtle py-2 text-center" style="width: 22%; background-color: rgba(6, 95, 70, 0.04);">
+                                            <th class="border-0 border-bottom border-light-subtle py-2 text-center" style="width: 18%; background-color: rgba(6, 95, 70, 0.04);">
+                                                <div class="font-amiri h4 fw-bold text-primary mb-2">الْإِشَارَة</div>
+                                                <div class="small text-uppercase ls-wide text-muted fw-bold" style="font-size: 0.65rem;">Gesture</div>
+                                            </th>
+                                            <th class="border-0 border-bottom border-light-subtle py-2 text-center" style="width: 18%; background-color: rgba(6, 95, 70, 0.04);">
                                                 <div class="font-amiri h4 fw-bold text-primary mb-2">مُتَّصِل</div>
                                                 <div class="small text-uppercase ls-wide text-muted fw-bold" style="font-size: 0.65rem;">Attached</div>
                                             </th>
-                                            <th class="border-0 border-bottom border-light-subtle py-2 text-center" style="width: 26%; background-color: rgba(6, 95, 70, 0.04);">
+                                            <th class="border-0 border-bottom border-light-subtle py-2 text-center" style="width: 22%; background-color: rgba(6, 95, 70, 0.04);">
                                                 <div class="font-amiri h4 fw-bold text-primary mb-2">مِثَال</div>
                                                 <div class="small text-uppercase ls-wide text-muted fw-bold" style="font-size: 0.65rem;">Example</div>
                                             </th>
-                                            <th class="border-0 border-bottom border-light-subtle py-2 text-center" style="width: 30%; background-color: rgba(6, 95, 70, 0.04);">
+                                            <th class="border-0 border-bottom border-light-subtle py-2 text-center" style="width: 24%; background-color: rgba(6, 95, 70, 0.04);">
                                                 <div class="font-amiri h4 fw-bold text-primary mb-2">الْمَعْنَى</div>
                                                 <div class="small text-uppercase ls-wide text-muted fw-bold" style="font-size: 0.65rem;">Meaning</div>
                                             </th>
                                         </tr>
                                     </thead>
+                                    <tbody>
                                         <!-- 3rd Person -->
-                                        <tr class="table-light"><td colspan="4" class="small fw-bold text-muted ps-4 py-1">3rd Person (He/They)</td></tr>
+                                        <tr class="table-light"><td colspan="5" class="small fw-bold text-muted ps-4 py-1">3rd Person (He/They)</td></tr>
                                         <tr>
                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
                                                 <span class="font-amiri h4 fw-bold text-primary bg-primary-subtle rounded-3 d-inline-flex align-items-center justify-content-center border border-primary-subtle mb-0" dir="rtl" style="width: 85px; height: 52px; line-height: 1;">هُوَ</span>
+                                            </td>
+                                            <td class="align-middle text-center py-3 border-bottom border-light-subtle">
+                                                <div class="gesture-container gesture-side" title="Single finger pointing to the side">
+                                                    <i class="fa-solid fa-hand-point-right" style="transform: none;"></i>
+                                                </div>
                                             </td>
                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
                                                 <span class="font-amiri h4 fw-bold text-primary" dir="rtl"><span class="border-bottom border-2 border-gold">هُ</span></span>
@@ -106,6 +117,11 @@
                                                 <span class="font-amiri h4 fw-bold text-primary bg-primary-subtle rounded-3 d-inline-flex align-items-center justify-content-center border border-primary-subtle mb-0" dir="rtl" style="width: 85px; height: 52px; line-height: 1;">هُمَا</span>
                                             </td>
                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
+                                                <div class="gesture-container gesture-side" title="Two fingers pointing to the side">
+                                                    <i class="fa-solid fa-hand-peace" style="transform: rotate(90deg);"></i>
+                                                </div>
+                                            </td>
+                                            <td class="align-middle text-center py-3 border-bottom border-light-subtle">
                                                 <span class="font-amiri h4 fw-bold text-primary" dir="rtl"><span class="border-bottom border-2 border-gold">هُمَا</span></span>
                                             </td>
                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
@@ -118,6 +134,11 @@
                                                 <span class="font-amiri h4 fw-bold text-primary bg-primary-subtle rounded-3 d-inline-flex align-items-center justify-content-center border border-primary-subtle mb-0" dir="rtl" style="width: 85px; height: 52px; line-height: 1;">هُمْ</span>
                                             </td>
                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
+                                                <div class="gesture-container gesture-side" title="Full palm pointing to the side">
+                                                    <i class="fa-solid fa-hand" style="transform: rotate(90deg);"></i>
+                                                </div>
+                                            </td>
+                                            <td class="align-middle text-center py-3 border-bottom border-light-subtle">
                                                 <span class="font-amiri h4 fw-bold text-primary" dir="rtl"><span class="border-bottom border-2 border-gold">هُمْ</span></span>
                                             </td>
                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
@@ -127,10 +148,15 @@
                                         </tr>
 
                                         <!-- 2nd Person -->
-                                        <tr class="table-light"><td colspan="4" class="small fw-bold text-muted ps-4 py-1">2nd Person (You)</td></tr>
+                                        <tr class="table-light"><td colspan="5" class="small fw-bold text-muted ps-4 py-1">2nd Person (You)</td></tr>
                                         <tr>
                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
                                                 <span class="font-amiri h4 fw-bold text-primary bg-primary-subtle rounded-3 d-inline-flex align-items-center justify-content-center border border-primary-subtle mb-0" dir="rtl" style="width: 85px; height: 52px; line-height: 1;">أَنْتَ</span>
+                                            </td>
+                                            <td class="align-middle text-center py-3 border-bottom border-light-subtle">
+                                                <div class="gesture-container gesture-straight" title="Single finger pointing straight ahead">
+                                                    <i class="fa-solid fa-hand-point-right"></i>
+                                                </div>
                                             </td>
                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
                                                 <span class="font-amiri h4 fw-bold text-primary" dir="rtl"><span class="border-bottom border-2 border-gold">كَ</span></span>
@@ -145,6 +171,11 @@
                                                 <span class="font-amiri h4 fw-bold text-primary bg-primary-subtle rounded-3 d-inline-flex align-items-center justify-content-center border border-primary-subtle mb-0" dir="rtl" style="width: 85px; height: 52px; line-height: 1;">أَنْتُمَا</span>
                                             </td>
                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
+                                                <div class="gesture-container gesture-straight" title="Two fingers pointing straight ahead">
+                                                    <i class="fa-solid fa-hand-peace" style="transform: none;"></i>
+                                                </div>
+                                            </td>
+                                            <td class="align-middle text-center py-3 border-bottom border-light-subtle">
                                                 <span class="font-amiri h4 fw-bold text-primary" dir="rtl"><span class="border-bottom border-2 border-gold">كُمَا</span></span>
                                             </td>
                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
@@ -157,6 +188,11 @@
                                                 <span class="font-amiri h4 fw-bold text-primary bg-primary-subtle rounded-3 d-inline-flex align-items-center justify-content-center border border-primary-subtle mb-0" dir="rtl" style="width: 85px; height: 52px; line-height: 1;">أَنْتُمْ</span>
                                             </td>
                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
+                                                <div class="gesture-container gesture-straight" title="Full palm pointing straight ahead">
+                                                    <i class="fa-solid fa-hand" style="transform: none;"></i>
+                                                </div>
+                                            </td>
+                                            <td class="align-middle text-center py-3 border-bottom border-light-subtle">
                                                 <span class="font-amiri h4 fw-bold text-primary" dir="rtl"><span class="border-bottom border-2 border-gold">كُمْ</span></span>
                                             </td>
                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
@@ -166,10 +202,15 @@
                                         </tr>
 
                                         <!-- 1st Person -->
-                                        <tr class="table-light"><td colspan="4" class="small fw-bold text-muted ps-4 py-1">1st Person (Speaker)</td></tr>
+                                        <tr class="table-light"><td colspan="5" class="small fw-bold text-muted ps-4 py-1">1st Person (Speaker)</td></tr>
                                         <tr>
                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
                                                 <span class="font-amiri h4 fw-bold text-primary bg-primary-subtle rounded-3 d-inline-flex align-items-center justify-content-center border border-primary-subtle mb-0" dir="rtl" style="width: 85px; height: 52px; line-height: 1;">أَنَا</span>
+                                            </td>
+                                            <td class="align-middle text-center py-3 border-bottom border-light-subtle">
+                                                <div class="gesture-container gesture-oneself" title="Single speaker (I)">
+                                                    <i class="fa-solid fa-user"></i>
+                                                </div>
                                             </td>
                                             <td class="align-middle text-center py-3 border-bottom border-light-subtle">
                                                 <span class="font-amiri h4 fw-bold text-primary" dir="rtl"><span class="border-bottom border-2 border-gold">ي</span></span>
@@ -182,6 +223,11 @@
                                         <tr>
                                             <td class="align-middle text-center py-3 border-0">
                                                 <span class="font-amiri h4 fw-bold text-primary bg-primary-subtle rounded-3 d-inline-flex align-items-center justify-content-center border border-primary-subtle mb-0" dir="rtl" style="width: 85px; height: 52px; line-height: 1;">نَحْنُ</span>
+                                            </td>
+                                            <td class="align-middle text-center py-3 border-0">
+                                                <div class="gesture-container gesture-oneself" title="Group speakers (We)">
+                                                    <i class="fa-solid fa-users"></i>
+                                                </div>
                                             </td>
                                             <td class="align-middle text-center py-3 border-0">
                                                 <span class="font-amiri h4 fw-bold text-primary" dir="rtl"><span class="border-bottom border-2 border-gold">نَا</span></span>
