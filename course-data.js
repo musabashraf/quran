@@ -58,7 +58,7 @@ const QuranCourseData = {
         },
         {
             id: 9,
-            title: "<span class='font-amiri fw-bold text-primary'>مَرْفُوع · مَنْصُوب · مَجْرُور</span> (Three states)",
+            title: "<span class='font-amiri fw-bold text-primary'>مَرْفُوع مَنْصُوب مَجْرُور</span> (Three states)",
             description: "Hear the last syllable: marfu‘ (often u / ḍamma), mansūb (often a / fatḥa), majrūr (often i / kasra)—plus simple pause (waqf) sights before full chapters on verbs and jar.",
             url: "chapter9.html",
             color: "primary"

@@ -66,24 +66,29 @@ function loadSidebar() {
 }
 
 function loadSyllabusGrid() {
-    const gridElement = document.getElementById('syllabus-grid');
-    if (!gridElement) return;
+    const timelineElement = document.getElementById('syllabus-timeline');
+    if (!timelineElement) return;
 
-    let gridHtml = '';
+    let html = '<div class="roadmap-timeline-line"></div>';
     QuranCourseData.chapters.forEach(ch => {
-        gridHtml += `
-            <div class="col-md-6 col-lg-3">
-                <div class="card shadow-sm rounded-4 overflow-hidden border-0 border-top border-${ch.color} border-4 h-100">
-                    <div class="card-body p-4">
-                        <div class="badge bg-primary-subtle rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 36px; height: 36px;">${ch.id}</div>
-                        <h6 class="fw-bold mb-2">${ch.title}</h6>
-                        <p class="small text-muted mb-0">${ch.description}</p>
+        let nodeClass = '';
+        if (ch.color === 'success') nodeClass = 'success';
+        else if (ch.color === 'danger') nodeClass = 'danger';
+
+        html += `
+            <div class="roadmap-timeline-node ${nodeClass}">
+                <div class="timeline-step-badge">${ch.id}</div>
+                <div class="timeline-card">
+                    <div class="timeline-card-header">
+                        <h4 class="timeline-card-title">${ch.title}</h4>
+                        <a href="${ch.url}" class="btn btn-sm btn-outline-primary rounded-pill px-3 py-1 fw-bold">Open Chapter</a>
                     </div>
+                    <p class="timeline-card-desc">${ch.description}</p>
                 </div>
             </div>`;
     });
 
-    gridElement.innerHTML = gridHtml;
+    timelineElement.innerHTML = html;
 }
 
 function automateAyahLinks() {

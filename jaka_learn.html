@@ -1,0 +1,1875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaka Learn | Future-Proofing Education for the AI Era</title>
+  <meta name="description" content="Provide schools with a complete system of technology and practical learning that equips students with real-world skills to thrive in the new AI world.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* --- CSS Variables & Design System --- */
+    :root {
+      --primary: #4f46e5;
+      --primary-hover: #4338ca;
+      --primary-light: #e0e7ff;
+      --primary-glow: rgba(79, 70, 229, 0.15);
+      --secondary: #0d9488;
+      --secondary-hover: #0f766e;
+      --secondary-light: #ccfbf1;
+      --background: #f8fafc;
+      --surface: #ffffff;
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-light: #94a3b8;
+      --border: #e2e8f0;
+      --border-focus: #cbd5e1;
+      --success: #10b981;
+      
+      --font-heading: 'Outfit', sans-serif;
+      --font-body: 'Inter', sans-serif;
+      
+      --shadow-sm: 0 1px 3px 0 rgba(0,0,0,0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.05);
+      --shadow-lg: 0 10px 25px -5px rgba(79, 70, 229, 0.05), 0 8px 10px -6px rgba(79, 70, 229, 0.05);
+      --shadow-xl: 0 20px 40px -15px rgba(15, 23, 42, 0.08);
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* --- Base Resets & Global Styles --- */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--background);
+      color: var(--text-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Abstract Background Decorative Blurs */
+    .bg-glow-1 {
+      position: absolute;
+      top: -100px;
+      right: -200px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .bg-glow-2 {
+      position: absolute;
+      top: 800px;
+      left: -200px;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(20, 184, 166, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .bg-glow-3 {
+      position: absolute;
+      bottom: 200px;
+      right: -100px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.08) 0%, rgba(255, 255, 255, 0) 70%);
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    /* --- Typography & Utility --- */
+    h1, h2, h3, h4 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.875rem 1.75rem;
+      border-radius: 9999px;
+      font-family: var(--font-heading);
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: var(--transition);
+      gap: 0.5rem;
+      border: 2px solid transparent;
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: white;
+      box-shadow: 0 4px 14px 0 rgba(79, 70, 229, 0.3);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--primary-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px 0 rgba(79, 70, 229, 0.4);
+    }
+
+    .btn-secondary {
+      background-color: var(--surface);
+      color: var(--text-primary);
+      border-color: var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--background);
+      border-color: var(--border-focus);
+      transform: translateY(-2px);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.375rem 1rem;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--primary);
+      background-color: var(--primary-light);
+      margin-bottom: 1.5rem;
+      border: 1px solid rgba(79, 70, 229, 0.2);
+    }
+
+    .section-title {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 4rem auto;
+    }
+
+    .section-title h2 {
+      font-size: 2.5rem;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+    }
+
+    .section-title p {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+    }
+
+    /* --- Navigation --- */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: rgba(248, 250, 252, 0.8);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(226, 232, 240, 0.5);
+      transition: var(--transition);
+    }
+
+    .navbar.scrolled {
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: var(--shadow-md);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 4.5rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--primary);
+      gap: 0.5rem;
+    }
+
+    .logo-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--secondary);
+      display: inline-block;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--primary);
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      display: flex;
+      align-items: center;
+    }
+
+    /* --- Hero Section --- */
+    .hero {
+      padding-top: 9rem;
+      padding-bottom: 6rem;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero-content h1 {
+      font-size: 3.5rem;
+      color: var(--text-primary);
+      margin-bottom: 1.5rem;
+      line-height: 1.15;
+    }
+
+    .hero-content h1 span {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      margin-bottom: 2.5rem;
+      max-width: 600px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    /* Interactive Prompt Sandbox Panel */
+    .hero-sandbox {
+      background-color: var(--surface);
+      border-radius: 24px;
+      box-shadow: var(--shadow-xl);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      height: 480px;
+    }
+
+    .sandbox-header {
+      background-color: #f1f5f9;
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .sandbox-dots {
+      display: flex;
+      gap: 6px;
+    }
+
+    .sandbox-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+
+    .sandbox-dot.red { background-color: #ef4444; }
+    .sandbox-dot.yellow { background-color: #eab308; }
+    .sandbox-dot.green { background-color: #22c55e; }
+
+    .sandbox-title {
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+
+    .sandbox-body {
+      padding: 1.5rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      background: linear-gradient(180deg, var(--surface) 0%, #fafafa 100%);
+    }
+
+    .sandbox-preset-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-light);
+    }
+
+    .sandbox-tabs {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .sandbox-tab {
+      background-color: #f1f5f9;
+      border: 1px solid var(--border);
+      border-radius: 9999px;
+      padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .sandbox-tab:hover, .sandbox-tab.active {
+      background-color: var(--primary-light);
+      border-color: rgba(79, 70, 229, 0.3);
+      color: var(--primary);
+    }
+
+    .sandbox-console {
+      flex-grow: 1;
+      background-color: #0f172a;
+      border-radius: 12px;
+      padding: 1.25rem;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.875rem;
+      color: #e2e8f0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      overflow-y: auto;
+      box-shadow: inset 0 2px 8px rgba(0,0,0,0.5);
+    }
+
+    .console-input-line {
+      display: flex;
+      gap: 0.5rem;
+      align-items: flex-start;
+    }
+
+    .console-prompt-char {
+      color: var(--secondary-light);
+      font-weight: 700;
+    }
+
+    .console-input-text {
+      color: #ffffff;
+      word-break: break-word;
+    }
+
+    .console-output-line {
+      color: #94a3b8;
+      border-left: 2px solid var(--primary);
+      padding-left: 0.75rem;
+      margin-left: 0.25rem;
+      white-space: pre-line;
+      line-height: 1.5;
+    }
+
+    .cursor-blink {
+      display: inline-block;
+      width: 8px;
+      height: 15px;
+      background-color: var(--secondary);
+      animation: blink 1s step-end infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    /* --- Jaka Learn Bridge Visualizer --- */
+    .bridge-section {
+      padding: 6rem 0;
+      background-color: #f1f5f9;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .bridge-grid {
+      display: grid;
+      grid-template-columns: 1fr 0.4fr 1fr;
+      gap: 2rem;
+      align-items: center;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .bridge-column {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .bridge-card {
+      background-color: var(--surface);
+      border-radius: 16px;
+      padding: 1.5rem;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      transition: var(--transition);
+    }
+
+    .bridge-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .bridge-card-icon {
+      background-color: #fee2e2;
+      color: #ef4444;
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .bridge-card-icon.yellow {
+      background-color: #fef9c3;
+      color: #ca8a04;
+    }
+
+    .bridge-card-icon.success {
+      background-color: var(--secondary-light);
+      color: var(--secondary);
+    }
+
+    .bridge-card-text h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.25rem;
+      color: var(--text-primary);
+    }
+
+    .bridge-card-text p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+
+    .bridge-connector {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      height: 100%;
+    }
+
+    .bridge-core {
+      background-color: var(--primary);
+      color: white;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 0.95rem;
+      box-shadow: 0 10px 25px -5px rgba(79, 70, 229, 0.4);
+      position: relative;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .bridge-core::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 4px solid var(--primary-light);
+      animation: pulse-ring 2.5s cubic-bezier(0.215, 0.610, 0.355, 1) infinite;
+      z-index: -1;
+    }
+
+    @keyframes pulse-ring {
+      0% { transform: scale(0.95); opacity: 1; }
+      80%, 100% { transform: scale(1.5); opacity: 0; }
+    }
+
+    .arrow-svg {
+      width: 32px;
+      height: 32px;
+      color: var(--text-light);
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.05));
+    }
+
+    .arrow-left { transform: rotate(180deg); }
+
+    /* --- High Impact Pain Points Section --- */
+    .pain-points {
+      padding: 6rem 0;
+      position: relative;
+    }
+
+    .pain-toggle-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 4rem;
+    }
+
+    .pain-toggle {
+      background-color: #e2e8f0;
+      padding: 0.375rem;
+      border-radius: 9999px;
+      display: flex;
+      gap: 0.25rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .pain-toggle-btn {
+      padding: 0.75rem 2rem;
+      border-radius: 9999px;
+      font-family: var(--font-heading);
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: var(--transition);
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+    }
+
+    .pain-toggle-btn.active {
+      background-color: var(--surface);
+      color: var(--primary);
+      box-shadow: var(--shadow-md);
+    }
+
+    .pain-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      min-height: 380px;
+    }
+
+    .pain-panel {
+      display: none;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      width: 100%;
+      animation: fadeIn 0.4s ease forwards;
+    }
+
+    .pain-panel.active {
+      display: grid;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .pain-card {
+      background-color: var(--surface);
+      border-radius: 20px;
+      padding: 2.25rem;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-lg);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pain-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-xl);
+      border-color: var(--primary-light);
+    }
+
+    .pain-icon-wrapper {
+      width: 50px;
+      height: 50px;
+      border-radius: 12px;
+      background-color: var(--primary-light);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .pain-card.schools .pain-icon-wrapper {
+      background-color: var(--secondary-light);
+      color: var(--secondary);
+    }
+
+    .pain-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.75rem;
+      color: var(--text-primary);
+    }
+
+    .pain-card p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      flex-grow: 1;
+      margin-bottom: 1.25rem;
+    }
+
+    .pain-meta {
+      border-top: 1px solid var(--border);
+      padding-top: 1rem;
+      margin-top: auto;
+    }
+
+    .pain-meta-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+      margin-bottom: 0.25rem;
+      display: block;
+    }
+
+    .pain-card.schools .pain-meta-label {
+      color: var(--secondary);
+    }
+
+    .pain-meta-val {
+      font-size: 0.9rem;
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+
+    /* --- Value Proposition: Triple-Win --- */
+    .triple-win-section {
+      padding: 6rem 0;
+      background-color: var(--surface);
+      border-top: 1px solid var(--border);
+    }
+
+    .win-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.5rem;
+    }
+
+    .win-card {
+      background-color: var(--background);
+      border-radius: 24px;
+      padding: 2.5rem;
+      border: 1px solid var(--border);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .win-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+      opacity: 0;
+      transition: var(--transition);
+    }
+
+    .win-card:hover {
+      transform: translateY(-8px);
+      background-color: var(--surface);
+      box-shadow: var(--shadow-xl);
+      border-color: rgba(79, 70, 229, 0.15);
+    }
+
+    .win-card:hover::before {
+      opacity: 1;
+    }
+
+    .win-target {
+      font-family: var(--font-heading);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+
+    .win-card:nth-child(2) .win-target { color: var(--secondary); }
+    .win-card:nth-child(3) .win-target { color: #f43f5e; }
+
+    .win-title {
+      font-size: 1.75rem;
+      color: var(--text-primary);
+      margin-bottom: 1.25rem;
+    }
+
+    .win-desc {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .win-features {
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .win-feat-item {
+      display: flex;
+      gap: 0.75rem;
+      font-size: 0.925rem;
+      color: var(--text-primary);
+      align-items: center;
+      font-weight: 500;
+    }
+
+    .win-feat-icon {
+      color: var(--success);
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+
+    /* --- Curriculum Explorer --- */
+    .curriculum-section {
+      padding: 6rem 0;
+      background-color: var(--background);
+      border-top: 1px solid var(--border);
+    }
+
+    .curr-explorer {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 3rem;
+      background-color: var(--surface);
+      border-radius: 24px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+      min-height: 500px;
+    }
+
+    .curr-menu {
+      background-color: #f8fafc;
+      border-right: 1px solid var(--border);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .curr-menu-btn {
+      padding: 1rem 1.25rem;
+      border-radius: 12px;
+      font-family: var(--font-heading);
+      font-weight: 600;
+      font-size: 1.05rem;
+      text-align: left;
+      border: 1px solid transparent;
+      background: transparent;
+      color: var(--text-secondary);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: var(--transition);
+    }
+
+    .curr-menu-btn:hover {
+      background-color: rgba(226, 232, 240, 0.5);
+      color: var(--text-primary);
+    }
+
+    .curr-menu-btn.active {
+      background-color: var(--surface);
+      border-color: var(--border);
+      color: var(--primary);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .curr-menu-btn svg {
+      width: 18px;
+      height: 18px;
+      opacity: 0;
+      transition: var(--transition);
+      color: var(--primary);
+    }
+
+    .curr-menu-btn.active svg {
+      opacity: 1;
+      transform: translateX(3px);
+    }
+
+    .curr-content-wrapper {
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .curr-tab-panel {
+      display: none;
+      flex-direction: column;
+      animation: fadeIn 0.4s ease forwards;
+    }
+
+    .curr-tab-panel.active {
+      display: flex;
+    }
+
+    .curr-meta-tag {
+      align-self: flex-start;
+      padding: 0.25rem 0.75rem;
+      background-color: var(--secondary-light);
+      color: var(--secondary);
+      font-size: 0.75rem;
+      font-weight: 700;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.25rem;
+    }
+
+    .curr-title {
+      font-size: 2.25rem;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+    }
+
+    .curr-desc {
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      margin-bottom: 2rem;
+    }
+
+    .curr-syllabus-title {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.5rem;
+    }
+
+    .curr-syllabus-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .curr-syllabus-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+    }
+
+    .curr-bullet {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--primary);
+    }
+
+    /* --- Lead Capture Section --- */
+    .lead-section {
+      padding: 6.5rem 0;
+      background: linear-gradient(135deg, var(--primary-light) 0%, rgba(20, 184, 166, 0.05) 100%);
+      position: relative;
+    }
+
+    .lead-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .lead-text h2 {
+      font-size: 2.5rem;
+      color: var(--text-primary);
+      margin-bottom: 1.25rem;
+    }
+
+    .lead-text p {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      margin-bottom: 2.5rem;
+    }
+
+    .lead-benefits {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .lead-benefit-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .lead-benefit-icon {
+      background-color: var(--surface);
+      color: var(--primary);
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .lead-benefit-info h4 {
+      font-size: 1.05rem;
+      color: var(--text-primary);
+      margin-bottom: 0.15rem;
+    }
+
+    .lead-benefit-info p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin: 0;
+    }
+
+    .lead-form-wrapper {
+      background-color: var(--surface);
+      border-radius: 24px;
+      padding: 3rem;
+      box-shadow: var(--shadow-xl);
+      border: 1px solid var(--border);
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      font-size: 0.875rem;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      color: var(--text-primary);
+      transition: var(--transition);
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-glow);
+    }
+
+    select.form-control {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23475569'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      background-size: 1.25rem;
+      padding-right: 2.5rem;
+    }
+
+    .lead-form-btn {
+      width: 100%;
+      margin-top: 1rem;
+    }
+
+    .form-success-state {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem 0;
+      animation: fadeIn 0.4s ease forwards;
+    }
+
+    .success-checkmark {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: var(--secondary-light);
+      color: var(--secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-success-state h3 {
+      font-size: 1.5rem;
+      color: var(--text-primary);
+      margin-bottom: 0.75rem;
+    }
+
+    .form-success-state p {
+      color: var(--text-secondary);
+      font-size: 1rem;
+    }
+
+    /* --- Footer --- */
+    .footer {
+      background-color: var(--text-primary);
+      color: #94a3b8;
+      padding: 5rem 0 3rem 0;
+      border-top: 1px solid #1e293b;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr repeat(3, 1fr);
+      gap: 4rem;
+      margin-bottom: 4rem;
+    }
+
+    .footer-logo {
+      color: #ffffff;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-desc {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-links-col h4 {
+      color: #ffffff;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      font-family: var(--font-heading);
+    }
+
+    .footer-links-col ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .footer-links-col a {
+      font-size: 0.925rem;
+      transition: var(--transition);
+    }
+
+    .footer-links-col a:hover {
+      color: #ffffff;
+      padding-left: 4px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #1e293b;
+      padding-top: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.85rem;
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 1.25rem;
+    }
+
+    .footer-social-link {
+      color: #94a3b8;
+      transition: var(--transition);
+    }
+
+    .footer-social-link:hover {
+      color: #ffffff;
+    }
+
+    /* --- Responsive Queries --- */
+    @media (max-width: 1024px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+      .hero-sandbox {
+        max-width: 600px;
+        margin: 0 auto;
+        width: 100%;
+      }
+      .win-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .bridge-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .bridge-connector {
+        flex-direction: row;
+        gap: 2rem;
+        height: auto;
+        padding: 1rem 0;
+      }
+      .arrow-left { transform: rotate(90deg); }
+      .arrow-right { transform: rotate(90deg); }
+      .curr-explorer {
+        grid-template-columns: 1fr;
+      }
+      .curr-menu {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        flex-direction: row;
+        overflow-x: auto;
+        padding: 1rem;
+      }
+      .curr-menu-btn {
+        white-space: nowrap;
+      }
+      .lead-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      .hero-content h1 {
+        font-size: 2.75rem;
+      }
+      .pain-panel {
+        grid-template-columns: 1fr;
+      }
+      .curr-content-wrapper {
+        padding: 1.5rem;
+      }
+      .curr-syllabus-list {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Decorative Orbs -->
+  <div class="bg-glow-1"></div>
+  <div class="bg-glow-2"></div>
+  <div class="bg-glow-3"></div>
+
+  <!-- Header Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        Jaka Learn <span class="logo-dot"></span>
+      </a>
+      <nav class="nav-links">
+        <a href="#bridge">Our System</a>
+        <a href="#hooks">Market Challenges</a>
+        <a href="#triple-win">Impact</a>
+        <a href="#curriculum">Curriculum</a>
+        <a href="#contact" class="btn btn-secondary" style="padding: 0.5rem 1.25rem;">Request Info</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.875rem;">Transform School</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="badge">✨ The Future of Education</span>
+        <h1>Equip Your School to Lead the <span>AI Era</span></h1>
+        <p>A comprehensive system of modern technology and practical learning designed for progressive classrooms. We teach students prompt engineering, financial literacy, and entrepreneurship—empowering them with real-world skills traditional systems ignore.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Schedule Free School Audit</a>
+          <a href="#curriculum" class="btn btn-secondary">Explore Curriculum</a>
+        </div>
+      </div>
+      
+      <!-- Interactive AI Sandbox Simulator -->
+      <div class="hero-sandbox">
+        <div class="sandbox-header">
+          <div class="sandbox-dots">
+            <span class="sandbox-dot red"></span>
+            <span class="sandbox-dot yellow"></span>
+            <span class="sandbox-dot green"></span>
+          </div>
+          <span class="sandbox-title">Jaka Learn AI Tutor Sandbox</span>
+          <span style="width: 36px;"></span>
+        </div>
+        <div class="sandbox-body">
+          <span class="sandbox-preset-label">Test a Curriculum Topic:</span>
+          <div class="sandbox-tabs">
+            <button class="sandbox-tab active" onclick="runPreset(1)">💻 Prompt Engineering</button>
+            <button class="sandbox-tab" onclick="runPreset(2)">📈 Financial Literacy</button>
+            <button class="sandbox-tab" onclick="runPreset(3)">🚀 Startup School</button>
+          </div>
+          <div class="sandbox-console">
+            <div class="console-input-line">
+              <span class="console-prompt-char">&gt;</span>
+              <span class="console-input-text" id="console-input">Teach AI to build a portfolio website outline...</span>
+              <span class="cursor-blink" id="console-cursor"></span>
+            </div>
+            <div class="console-output-line" id="console-output">Loading simulator...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Bridge Visualizer -->
+  <section class="bridge-section" id="bridge">
+    <div class="container">
+      <div class="section-title">
+        <h2>Bridging the Future Gap</h2>
+        <p>Traditional metrics are failing. We create a direct link between modern curriculum needs and operational success.</p>
+      </div>
+
+      <div class="bridge-grid">
+        <!-- Challenges Left -->
+        <div class="bridge-column">
+          <div class="bridge-card">
+            <div class="bridge-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 24px; height: 24px;"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126v.008H12v-.008z" /></svg>
+            </div>
+            <div class="bridge-card-text">
+              <h4>Parents: Degree without a Job</h4>
+              <p>Spending lakhs on scores while the market demands real-world execution.</p>
+            </div>
+          </div>
+          <div class="bridge-card">
+            <div class="bridge-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 24px; height: 24px;"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            </div>
+            <div class="bridge-card-text">
+              <h4>Schools: Stuck in Rote Learning</h4>
+              <p>Smartboards exist, but curriculum remains rigidly locked in the 1990s.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center Catalyst -->
+        <div class="bridge-connector">
+          <svg class="arrow-svg arrow-right" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+          <div class="bridge-core">
+            <span>JAKA</span>
+            <span style="font-size: 0.6rem; letter-spacing: 0.1em; opacity: 0.8;">LEARN</span>
+          </div>
+          <svg class="arrow-svg arrow-right" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+        </div>
+
+        <!-- Outcomes Right -->
+        <div class="bridge-column">
+          <div class="bridge-card">
+            <div class="bridge-card-icon success">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 24px; height: 24px;"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" /></svg>
+            </div>
+            <div class="bridge-card-text">
+              <h4>Capable Minds & Skills</h4>
+              <p>Students build apps, master compound interest, and leverage AI constructively.</p>
+            </div>
+          </div>
+          <div class="bridge-card">
+            <div class="bridge-card-icon success">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 24px; height: 24px;"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg>
+            </div>
+            <div class="bridge-card-text">
+              <h4>Modern Premium Branding</h4>
+              <p>Schools stand out, driving enrollment with a future-proof value proposition.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Market Challenges Section (Hooks) -->
+  <section class="pain-points" id="hooks">
+    <div class="container">
+      <div class="section-title">
+        <h2>What Keeps Stakeholders Awake?</h2>
+        <p>The education crisis is real. See how Jaka Learn tackles the core concerns keeping both parents and school management up at night.</p>
+      </div>
+
+      <div class="pain-toggle-wrapper">
+        <div class="pain-toggle">
+          <button class="pain-toggle-btn active" id="toggle-parents" onclick="switchPainTab('parents')">🛑 For Parents</button>
+          <button class="pain-toggle-btn" id="toggle-schools" onclick="switchPainTab('schools')">🏫 For School Management</button>
+        </div>
+      </div>
+
+      <!-- PARENTS TAB -->
+      <div class="pain-panel active" id="panel-parents">
+        <div class="pain-card">
+          <div class="pain-icon-wrapper">🎓</div>
+          <h3>The "Degree without a Job" Crisis</h3>
+          <p>Parents are spending lakhs on traditional schooling and coaching, yet nearly half of all graduates remain unemployable. The traditional formula—memorize, score 95%, apply—is broken. Companies want skills, not mark sheets.</p>
+          <div class="pain-meta">
+            <span class="pain-meta-label">The Threat</span>
+            <span class="pain-meta-val">High coaching debt, zero practical skill set.</span>
+          </div>
+        </div>
+
+        <div class="pain-card">
+          <div class="pain-icon-wrapper">🤖</div>
+          <h3>The Post-AI Panic</h3>
+          <p>By the time current school children graduate, AI will have completely automated standard corporate tasks. Parents see the threat but have no resources to teach their children what it takes to remain irreplaceable.</p>
+          <div class="pain-meta">
+            <span class="pain-meta-label">The Threat</span>
+            <span class="pain-meta-val">Graduating into automated, obsolete careers.</span>
+          </div>
+        </div>
+
+        <div class="pain-card">
+          <div class="pain-icon-wrapper">🧠</div>
+          <h3>The "Cognitive Off-Loading" Trap</h3>
+          <p>With AI shortcuts everywhere, students copy and paste assignments. Parents see their children losing basic analytical ability, critical thinking, research skills, and standard independence.</p>
+          <div class="pain-meta">
+            <span class="pain-meta-label">The Threat</span>
+            <span class="pain-meta-val">Passive learning and loss of creative output.</span>
+          </div>
+        </div>
+
+        <div class="pain-card">
+          <div class="pain-icon-wrapper">🧗</div>
+          <h3>The Fear of a One-Track Mind</h3>
+          <p>Extreme pressure centered entirely on competitive exams creates intense fear. If a child fails a single test, parents worry their entire future is lost. They need alternatives like startup skills and global capability.</p>
+          <div class="pain-meta">
+            <span class="pain-meta-label">The Threat</span>
+            <span class="pain-meta-val">Exam failure leading to total career paralysis.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SCHOOLS TAB -->
+      <div class="pain-panel" id="panel-schools">
+        <div class="pain-card schools">
+          <div class="pain-icon-wrapper">🏷️</div>
+          <h3>The Rote-Learning Stigma</h3>
+          <p>Progressive schools strive to market themselves as modern, but their actual core curriculum remains stuck in standard, outdated formulas. They risk losing enrollment to newer alternative or international boards.</p>
+          <div class="pain-meta">
+            <span class="pain-meta-label">The School Danger</span>
+            <span class="pain-meta-val">Loss of status, premium pricing, and student retention.</span>
+          </div>
+        </div>
+
+        <div class="pain-card schools">
+          <div class="pain-icon-wrapper">⏳</div>
+          <h3>Teacher Burnout & Admin Drown</h3>
+          <p>Teachers spend up to 40% of their energy on repetitive data entry, reporting compliance, and manual grading instead of high-impact instruction. This reduces classroom focus and increases turnover.</p>
+          <div class="pain-meta">
+            <span class="pain-meta-label">The School Danger</span>
+            <span class="pain-meta-val">Overworked faculty, lower teaching standards.</span>
+          </div>
+        </div>
+
+        <div class="pain-card schools">
+          <div class="pain-icon-wrapper">🖥️</div>
+          <h3>The "Tech for Show" Problem</h3>
+          <p>Smartboards and basic IT labs are bought to look modern, but schools lack a structured syllabus or actual instruction model for modern skills like AI integration, finance, or business development.</p>
+          <div class="pain-meta">
+            <span class="pain-meta-label">The School Danger</span>
+            <span class="pain-meta-val">Expensive hardware left unused or underutilized.</span>
+          </div>
+        </div>
+
+        <div class="pain-card schools">
+          <div class="pain-icon-wrapper">🛡️</div>
+          <h3>The AI Policy Vacuum</h3>
+          <p>Administrators know students are secretly using AI to copy work. Yet, schools lack the framework, training, and policy to direct AI from a cheating tool into an interactive, structured study partner.</p>
+          <div class="pain-meta">
+            <span class="pain-meta-label">The School Danger</span>
+            <span class="pain-meta-val">Loss of integrity and academic quality.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Triple-Win Value Proposition -->
+  <section class="triple-win-section" id="triple-win">
+    <div class="container">
+      <div class="section-title">
+        <h2>The Triple-Win System</h2>
+        <p>Jaka Learn provides value across all levels of the academic lifecycle, producing high outcomes for every user.</p>
+      </div>
+
+      <div class="win-grid">
+        <!-- Students -->
+        <div class="win-card">
+          <span class="win-target">For Students</span>
+          <h3 class="win-title">Real-World Capability</h3>
+          <p class="win-desc">Go beyond textbook memorization. Learn the skills that are demanded by high-growth startups, global companies, and modern venture creation.</p>
+          <div class="win-features">
+            <div class="win-feat-item">
+              <svg class="win-feat-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              AI-Resilient Skillsets
+            </div>
+            <div class="win-feat-item">
+              <svg class="win-feat-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              Entrepreneurship Core Labs
+            </div>
+            <div class="win-feat-item">
+              <svg class="win-feat-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              Global Opportunities Mindset
+            </div>
+          </div>
+        </div>
+
+        <!-- Schools -->
+        <div class="win-card">
+          <span class="win-target">For Schools</span>
+          <h3 class="win-title">Premium Enrollment Edge</h3>
+          <p class="win-desc">Equip classrooms with a complete technological upgrade. Transform your school branding and prove actual modern ROI to demanding parents.</p>
+          <div class="win-features">
+            <div class="win-feat-item">
+              <svg class="win-feat-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              Modern Turnkey Curriculum
+            </div>
+            <div class="win-feat-item">
+              <svg class="win-feat-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              Premium Brand Positioning
+            </div>
+            <div class="win-feat-item">
+              <svg class="win-feat-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              Increased Admission Interest
+            </div>
+          </div>
+        </div>
+
+        <!-- Teachers -->
+        <div class="win-card">
+          <span class="win-target">For Teachers</span>
+          <h3 class="win-title">Save 40% Admin Time</h3>
+          <p class="win-desc">Say goodbye to administrative overload. Use custom automations for data input and grading assistance so you can focus on real instruction.</p>
+          <div class="win-features">
+            <div class="win-feat-item">
+              <svg class="win-feat-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              AI-Powered Report Tools
+            </div>
+            <div class="win-feat-item">
+              <svg class="win-feat-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              Plug-and-Play Lesson Guides
+            </div>
+            <div class="win-feat-item">
+              <svg class="win-feat-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              Reduced Classroom Fatigue
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Curriculum Section -->
+  <section class="curriculum-section" id="curriculum">
+    <div class="container">
+      <div class="section-title">
+        <h2>Explore the Jaka Learn Syllabus</h2>
+        <p>Click on any of the core modules below to preview our modern, structured lesson system.</p>
+      </div>
+
+      <div class="curr-explorer">
+        <!-- Sidebar Navigation -->
+        <div class="curr-menu">
+          <button class="curr-menu-btn active" onclick="switchCurriculum(this, 'prompt')">
+            💻 Prompt Engineering
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
+          </button>
+          <button class="curr-menu-btn" onclick="switchCurriculum(this, 'finance')">
+            📈 Financial Literacy
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
+          </button>
+          <button class="curr-menu-btn" onclick="switchCurriculum(this, 'startup')">
+            🚀 Startup School
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
+          </button>
+          <button class="curr-menu-btn" onclick="switchCurriculum(this, 'thinking')">
+            🧠 Cognitive Autonomy
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
+          </button>
+        </div>
+
+        <!-- Detail Panel Container -->
+        <div class="curr-content-wrapper">
+          <!-- PROMPT ENGINEERING -->
+          <div class="curr-tab-panel active" id="curr-prompt">
+            <span class="curr-meta-tag">Grade level: Middle to High School</span>
+            <h3 class="curr-title">Prompt Engineering & AI Tools</h3>
+            <p class="curr-desc">Rather than copying homework, students learn to treat AI as a collaborative partner. We teach logic patterns, prompt frameworks, and safety guidelines to solve complex problems.</p>
+            <h4 class="curr-syllabus-title">Syllabus Breakdown</h4>
+            <div class="curr-syllabus-list">
+              <div class="curr-syllabus-item"><span class="curr-bullet"></span> AI Logic Models & Context Setting</div>
+              <div class="curr-syllabus-item"><span class="curr-bullet"></span> System Persona Frameworks</div>
+              <div class="curr-syllabus-item"><span class="curr-bullet"></span> Iterative Debugging Methods</div>
+              <div class="curr-syllabus-item"><span class="curr-bullet"></span> Avoiding Hallucinations & Fact-checking</div>
+            </div>
+          </div>
+
+          <!-- FINANCIAL LITERACY -->
+          <div class="curr-tab-panel" id="curr-finance">
+            <span class="curr-meta-tag">Grade level: Upper Middle to High School</span>
+            <h3 class="curr-title">Practical Financial Literacy</h3>
+            <p class="curr-desc">Basic economics made practical. Students learn standard money principles, inflation defense, compound growth, and budgeting with visual simulators.</p>
+            <h4 class="curr-syllabus-title">Syllabus Breakdown</h4>
+            <div class="curr-syllabus-list">
+              <div class="curr-syllabus-item"><span class="curr-bullet"></span> Compound Interest Mechanics</div>
+              <div class="curr-syllabus-item"><span class="curr-bullet"></span> Inflation & Purchasing Power</div>
+              <div class="curr-syllabus-item"><span class="curr-bullet"></span> Investing Assets vs. Liabilities</div>
+              <div class="curr-syllabus-item"><span class="curr-bullet"></span> Basic Taxes & Budget Models</div>
+            </div>
+          </div>
+
+          <!-- STARTUP SCHOOL -->
+          <div class="curr-tab-panel" id="curr-startup">
+            <span class="curr-meta-tag">Grade level: High School</span>
+            <h3 class="curr-title">Startup School & Entrepreneurship</h3>
+            <p class="curr-desc">Transforming ideas into entities. Students walk through identifying customer pain points, rapid prototyping, unit economics, and pitch presentations.</p>
+            <h4 class="curr-syllabus-title">Syllabus Breakdown</h4>
+            <div class="curr-syllabus-list">
+              <div class="curr-syllabus-item"><span class="curr-bullet"></span> Identifying Market Pain Points</div>
+              <div class="curr-syllabus-item"><span class="curr-bullet"></span> Lean Canvas Development</div>
+              <div class="curr-syllabus-item"><span class="curr-bullet"></span> Customer Pitch Decks</div>
+              <div class="curr-syllabus-item"><span class="curr-bullet"></span> Basic Unit Economics & Sales</div>
+            </div>
+          </div>
+
+          <!-- COGNITIVE AUTONOMY -->
+          <div class="curr-tab-panel" id="curr-thinking">
+            <span class="curr-meta-tag">Grade level: All Levels</span>
+            <h3 class="curr-title">Cognitive Autonomy & Focus</h3>
+            <p class="curr-desc">Resisting the trap of digital dependencies. We teach methods for deep research, attention management, logic loops, and critical thinking tools.</p>
+            <h4 class="curr-syllabus-title">Syllabus Breakdown</h4>
+            <div class="curr-syllabus-list">
+              <div class="curr-syllabus-item"><span class="curr-bullet"></span> Digital Distraction Management</div>
+              <div class="curr-syllabus-item"><span class="curr-bullet"></span> Deep Focus Exercises</div>
+              <div class="curr-syllabus-item"><span class="curr-bullet"></span> Identifying Cognitive Bias</div>
+              <div class="curr-syllabus-item"><span class="curr-bullet"></span> Logic Trees & Problem Solving</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead Capture Section (Contact Form) -->
+  <section class="lead-section" id="contact">
+    <div class="container lead-grid">
+      <div class="lead-text">
+        <h2>Bring Jaka Learn to Your School</h2>
+        <p>Schedule a live demonstration of our platform, curriculum guides, and teacher helper tool for your board or management team.</p>
+        
+        <div class="lead-benefits">
+          <div class="lead-benefit-item">
+            <div class="lead-benefit-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 20px; height: 20px;"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" /></svg>
+            </div>
+            <div class="lead-benefit-info">
+              <h4>Free School Assessment</h4>
+              <p>We analyze your IT labs, curricula, and teacher load.</p>
+            </div>
+          </div>
+
+          <div class="lead-benefit-item">
+            <div class="lead-benefit-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 20px; height: 20px;"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg>
+            </div>
+            <div class="lead-benefit-info">
+              <h4>Sample Lesson Materials</h4>
+              <p>Receive print-ready syllabus excerpts and starter tasks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lead-form-wrapper">
+        <form id="leadForm" onsubmit="submitForm(event)">
+          <div class="form-group">
+            <label for="fullName">Your Full Name</label>
+            <input type="text" id="fullName" class="form-control" placeholder="e.g. Dr. Sarah Sharma" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Work Email</label>
+            <input type="email" id="email" class="form-control" placeholder="s.sharma@yourschool.com" required>
+          </div>
+          <div class="form-group">
+            <label for="role">Your Role</label>
+            <select id="role" class="form-control" required>
+              <option value="" disabled selected>Select your role...</option>
+              <option value="principal">School Principal / Director</option>
+              <option value="owner">School Owner / Trustee</option>
+              <option value="teacher">Department Head / Teacher</option>
+              <option value="parent">Interested Parent</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="schoolName">School Name & Location</label>
+            <input type="text" id="schoolName" class="form-control" placeholder="e.g. Oakridge Public School, Bangalore" required>
+          </div>
+          <button type="submit" class="btn btn-primary lead-form-btn">Submit Request</button>
+        </form>
+
+        <div class="form-success-state" id="formSuccess">
+          <div class="success-checkmark">✓</div>
+          <h3>Request Submitted!</h3>
+          <p>Thank you for reaching out. A Jaka Learn curriculum strategist will contact your office within 24 business hours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo footer-logo">Jaka Learn <span class="logo-dot"></span></div>
+        <p class="footer-desc">Equipping schools to produce capable minds with real-world skills to thrive in the new AI economy.</p>
+      </div>
+      <div class="footer-links-col">
+        <h4>The System</h4>
+        <ul>
+          <li><a href="#bridge">How it Works</a></li>
+          <li><a href="#hooks">Audience Concerns</a></li>
+          <li><a href="#triple-win">Impact Metrics</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Curriculum</h4>
+        <ul>
+          <li><a href="#curriculum">Prompt Engineering</a></li>
+          <li><a href="#curriculum">Financial Literacy</a></li>
+          <li><a href="#curriculum">Startup School</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Inquiries</h4>
+        <ul>
+          <li><a href="#contact">Schedule Audit</a></li>
+          <li><a href="#contact">Request Brochure</a></li>
+          <li><a href="mailto:info@jakalearn.com">info@jakalearn.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>&copy; 2026 Jaka Learn. All rights reserved.</span>
+      <div class="footer-socials">
+        <a href="#" class="footer-social-link">LinkedIn</a>
+        <a href="#" class="footer-social-link">Twitter</a>
+        <a href="#" class="footer-social-link">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Page Interactivity Scripts -->
+  <script>
+    // Sticky Header Scroll Event
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Toggle between Parents and Schools pain point panels
+    function switchPainTab(category) {
+      document.getElementById('toggle-parents').classList.toggle('active', category === 'parents');
+      document.getElementById('toggle-schools').classList.toggle('active', category === 'schools');
+
+      document.getElementById('panel-parents').classList.toggle('active', category === 'parents');
+      document.getElementById('panel-schools').classList.toggle('active', category === 'schools');
+    }
+
+    // Toggle curriculum syllabus tabs
+    function switchCurriculum(button, tabId) {
+      // Remove active classes
+      const buttons = document.querySelectorAll('.curr-menu-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+
+      const panels = document.querySelectorAll('.curr-tab-panel');
+      panels.forEach(panel => panel.classList.remove('active'));
+
+      // Add active state to clicked button and panel
+      button.classList.add('active');
+      document.getElementById(`curr-${tabId}`).classList.add('active');
+    }
+
+    // Lead capture form handler
+    function submitForm(event) {
+      event.preventDefault();
+      document.getElementById('leadForm').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'flex';
+    }
+
+    // AI Sandbox preset script simulation
+    const presets = {
+      1: {
+        input: "Teach AI to build a portfolio website outline...",
+        output: "Here is a high-converting portfolio website structure:\n\n1. 🧭 Hero Section:\n   - Headline: Clear value hook\n   - Subheadline: What you do + CTA\n\n2. 🌟 Proof Bar:\n   - Logos of clients or partners\n\n3. 📊 Project Cards:\n   - Clean CSS grid displaying case studies\n\n4. ✉️ Frictionless Contact Form:\n   - Captures leads directly into database."
+      },
+      2: {
+        input: "Explain inflation & purchasing power in simple terms...",
+        output: "If inflation runs at 7% per year, but your savings account pays only 2%:\n\n- You are losing 5% of your wealth every year.\n- Money left in cash actively decays in purchasing power.\n\nKey Lesson: To preserve wealth, students learn that assets must be placed into productive ventures (e.g. equities or local businesses) that outgrow inflation."
+      },
+      3: {
+        input: "Create a value proposition for an AI startup tutor...",
+        output: "Value Proposition Blueprint:\n\n'Jaka Learn equips schools with a premium, turnkey curriculum teaching AI and finance. We save teachers 40% of their administrative time, while proving real-world outcome metrics to demanding parents.'\n\nStudents learn: A solid value prop must solve a real pain point, state the unique outcome, and demonstrate speed."
+      }
+    };
+
+    let typingTimeout;
+
+    function runPreset(presetId) {
+      // Manage Suggestion Button Classes
+      const tabs = document.querySelectorAll('.sandbox-tab');
+      tabs.forEach((tab, index) => {
+        tab.classList.toggle('active', index === (presetId - 1));
+      });
+
+      const selected = presets[presetId];
+      const consoleInput = document.getElementById('console-input');
+      const consoleOutput = document.getElementById('console-output');
+      const cursor = document.getElementById('console-cursor');
+
+      // Clear current outputs
+      consoleInput.textContent = "";
+      consoleOutput.textContent = "";
+      cursor.style.display = "inline-block";
+
+      clearTimeout(typingTimeout);
+
+      // Simulate keyboard input
+      let inputCharIndex = 0;
+      function typeInput() {
+        if (inputCharIndex < selected.input.length) {
+          consoleInput.textContent += selected.input.charAt(inputCharIndex);
+          inputCharIndex++;
+          typingTimeout = setTimeout(typeInput, 30);
+        } else {
+          // Play simulated AI typing response
+          cursor.style.display = "none";
+          consoleOutput.textContent = "AI is thinking...";
+          typingTimeout = setTimeout(typeOutput, 600);
+        }
+      }
+
+      let outputCharIndex = 0;
+      consoleOutput.textContent = "";
+      function typeOutput() {
+        if (outputCharIndex === 0) {
+          consoleOutput.textContent = "";
+        }
+        if (outputCharIndex < selected.output.length) {
+          consoleOutput.textContent += selected.output.charAt(outputCharIndex);
+          outputCharIndex++;
+          typingTimeout = setTimeout(typeOutput, 15);
+        }
+      }
+
+      typeInput();
+    }
+
+    // Initialize sandbox simulation on load
+    window.addEventListener('DOMContentLoaded', () => {
+      runPreset(1);
+    });
+  </script>
+</body>
+</html>
