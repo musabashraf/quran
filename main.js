@@ -69,21 +69,24 @@ function loadSyllabusGrid() {
     const timelineElement = document.getElementById('syllabus-timeline');
     if (!timelineElement) return;
 
-    let html = '<div class="roadmap-timeline-line"></div>';
+    let html = '';
     QuranCourseData.chapters.forEach(ch => {
-        let nodeClass = '';
-        if (ch.color === 'success') nodeClass = 'success';
-        else if (ch.color === 'danger') nodeClass = 'danger';
+        const btnColor = ch.color === 'primary' ? 'primary' : (ch.color === 'success' ? 'success' : 'danger');
 
         html += `
-            <div class="roadmap-timeline-node ${nodeClass}">
-                <div class="timeline-step-badge">${ch.id}</div>
-                <div class="timeline-card">
-                    <div class="timeline-card-header">
-                        <h4 class="timeline-card-title">${ch.title}</h4>
-                        <a href="${ch.url}" class="btn btn-sm btn-outline-primary rounded-pill px-3 py-1 fw-bold">Open Chapter</a>
+            <div class="position-relative mb-4">
+                <!-- Step Badge centered horizontally on the border line, vertically aligned with card heading -->
+                <div class="position-absolute start-0 translate-middle rounded-circle bg-white border border-4 border-${ch.color} d-flex align-items-center justify-content-center fw-bold text-${ch.color} shadow-sm" 
+                     style="width: 48px; height: 48px; z-index: 2; top: 2.25rem;">
+                    ${ch.id}
+                </div>
+                <!-- Chapter Card -->
+                <div class="card p-4 rounded-4 shadow-sm border-0 border-top border-4 border-${ch.color} ms-4 ms-md-5">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+                        <h4 class="h5 fw-bold mb-0 text-dark">${ch.title}</h4>
+                        <a href="${ch.url}" class="btn btn-sm btn-outline-${btnColor} rounded-pill px-3 py-1 fw-bold">Open Chapter</a>
                     </div>
-                    <p class="timeline-card-desc">${ch.description}</p>
+                    <p class="text-secondary mb-0 small" style="line-height: 1.6;">${ch.description}</p>
                 </div>
             </div>`;
     });
