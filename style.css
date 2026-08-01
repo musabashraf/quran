@@ -642,7 +642,88 @@ body {
     text-align: left !important;
 }
 
+/* Chapter 1 Redesign Custom Styles */
+.def-badge {
+    display: inline-block;
+    padding: 0.45rem 1rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 0.75rem;
+}
 
+.def-badge-verb {
+    background-color: rgba(25, 135, 84, 0.12) !important;
+    color: #198754 !important;
+    border: 1px solid rgba(25, 135, 84, 0.25);
+}
 
+.def-badge-ism {
+    background-color: rgba(13, 110, 253, 0.12) !important;
+    color: #0d6efd !important;
+    border: 1px solid rgba(13, 110, 253, 0.25);
+}
 
+.def-badge-harf {
+    background-color: rgba(108, 117, 125, 0.12) !important;
+    color: #6c757d !important;
+    border: 1px solid rgba(108, 117, 125, 0.25);
+}
 
+.examples-flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+    flex-wrap: nowrap;
+}
+
+@media (max-width: 480px) {
+    .examples-flex-container {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+}
+
+.horizontal-example-card {
+    flex: 1;
+    background-color: white;
+    border: 1px solid rgba(6, 95, 70, 0.08);
+    border-radius: 1.25rem;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.01), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+}
+
+.horizontal-example-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px -5px rgba(6, 95, 70, 0.1);
+    border-color: rgba(6, 95, 70, 0.2);
+}
+
+.horizontal-example-card .arabic {
+    font-size: 1.75rem;
+    display: block;
+    margin-bottom: 0.4rem;
+    color: var(--bs-primary);
+    font-weight: 700;
+    font-family: 'Amiri', 'Scheherazade New', serif !important;
+}
+
+.horizontal-example-card .english {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #4b5563;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    opacity: 0.8;
+}
+
+/* Slow down Bootstrap collapse transition speed for a smoother, premium feel */
+.collapsing {
+    transition: height 0.4s cubic-bezier(0.25, 1, 0.5, 1) !important;
+}

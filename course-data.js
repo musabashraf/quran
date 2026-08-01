@@ -10,7 +10,7 @@ const QuranCourseData = {
         {
             id: 2,
             title: "<span class='font-amiri fw-bold text-primary'>جِذْر</span> (The Root)",
-            description: "Understand the fundamental DNA of Arabic grammar through six core transformations.",
+            description: "Understand the fundamental DNA of Arabic grammar through four core transformations (with two advanced forms).",
             url: "chapter2.html",
             color: "success"
         },

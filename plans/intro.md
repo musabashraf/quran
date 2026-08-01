@@ -12,7 +12,7 @@ The chapters below match the current course outline; more may be added over time
 
 1. **Word Classification** – Every word in the Quran is either a **Fil** (verb), an **Ism** (noun/name), or a **Harf** (particle).
 
-2. **The Root (جِذْر) and six basic forms** – The “DNA” of Arabic grammar: past, present, command, doer (**فَاعِل**), receiver (**مَفْعُول**), and verbal noun (**مَصْدَر**); the first five follow predictable (**قياسي**) patterns, while many **مَصْدَر** forms are learned by usage (**سماعي**).
+2. **The Root (جِذْر) and basic forms** – The “DNA” of Arabic grammar: past, present, command, and doer (**فَاعِل**), with receiver (**مَفْعُول**) and verbal noun (**مَصْدَر**) introduced as advanced forms.
 
 3. **Pronouns (الضَّمِير)** – A consolidated master reference table combining pronouns and both verb tenses for quick lookups.
 
